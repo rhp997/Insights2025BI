@@ -1,0 +1,25 @@
+{
+  "name": "insights2025bi",
+  "version": "1.0.0",
+  "description": "Epicor Insights 2025: Advanced BI Session",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhp997/Insights2025BI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rhp997/Insights2025BI/issues"
+  },
+  "homepage": "https://github.com/rhp997/Insights2025BI#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
