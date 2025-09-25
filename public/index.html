@@ -23,6 +23,19 @@
             border: 1px solid #495057;
             background-color: #dadee2;
         }
+
+        #img-process {
+            width: 350px;
+            height: 489px;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+            background-image: url("images/google-maps-thumb.webp");
+        }
+
+        #img-process:hover {
+            background-image: url("images/yardMap-thumb.png");
+        }
     </style>
 </head>
 
@@ -34,21 +47,202 @@
             <p>Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with
                 support for interactivity and animation.</p>
             <div class="accordion" id="svgAccordion">
+                <!-- Accordion Item -->
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                    <h2 class="accordion-header show" id="headingProcess">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <strong><a href="svg-example.html">SVG Example (static HTML)</a></strong>
+                            data-bs-target="#collapseProcess" aria-expanded="true" aria-controls="collapseProcess">
+                            <strong>SVG Creation Process</strong>
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    <div id="collapseProcess" class="accordion-collapse" aria-labelledby="headingProcess"
+                        data-bs-parent="#svgAccordion">
+                        <div class="accordion-body">
+                            <div class="col-md-4">
+                                <a href="images/google-maps.webp">
+                                    <div id="img-process" class="img-fluid float-start me-3 mb-3"></div>
+                                </a>
+                            </div>
+                            <h5><img src="https://img.shields.io/badge/Inkscape-000000?logo=Inkscape&logoColor=white"
+                                    class="pe-2">Design</h5>
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item">Download or login to the vector illustrator program of your
+                                    choice (e.g., Adobe
+                                    Illustrator, Canva, CorelDraw, etc.). I'm using <a
+                                        href="https://inkscape.org/release/inkscape-1.4.2/" target="_blank">Inkscape
+                                        (FOSS)</a></li>
+                                <li class="list-group-item">For Examples 1 & 2, I imported a screenshot (File/Import) of
+                                    Google Maps and set the
+                                    transparancy to a value that I could draw on top of the imported layer in an "onion
+                                    skin" fashion.</li>
+                                <li class="list-group-item">I found it easier <i>not</i> to use layers when creating my
+                                    drawing as this obfuscated the .svg
+                                    file. YMMV.</li>
+                                <li class="list-group-item">Naming each object (Object/Object Properties/ID --> Set)
+                                    also helped when manipulating the SVG elements inside an HTML document.</li>
+                                <li class="list-group-item">Optional: Convert each shape to a path object (Path/Object
+                                    to Path). Although SVG can
+                                    easily draw native shapes (e.g., rect, circles, etc.), paths make the JavaScript and
+                                    database entries much simpler. If you plan to import the svg file using Ajax, this
+                                    is
+                                    less important.</li>
+                                <li class="list-group-item">If it exists, delete any screenshot/bitmap layer from the
+                                    file.
+                                </li>
+                                <li class="list-group-item">Save or Export the file as a <i>Plain</i> SVG file</li>
+                                <li class="list-group-item">When satisfied with your drawing, open the SVG file in a
+                                    text editor and optionally add class or additional attributes</li>
+                            </ol>
+                            <h5 class="pt-3">Load</h5>
+                            <p>Determine how you will load the SVG into your web
+                                page.</p>
+                            <p> <a href="svg-example-1.html">Example 1</a> uses JSON data to create the SVG
+                                elements dynamically.<br />
+                                <a href="svg-example-2.html">Example 2</a>
+                                loads the SVG directly file using Ajax.
+                            </p>
+                            <p> Both allow for interactivity and styling
+                                using
+                                CSS.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingBTTables">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseBTTables" aria-expanded="false" aria-controls="collapseBTTables">
+                            <strong>Bistrack Tables</strong>
+                        </button>
+                    </h2>
+                    <!-- Add "show" to the class definition to open automatically -->
+                    <div id="collapseBTTables" class="accordion-collapse collapse" aria-labelledby="headingBTTables"
+                        data-bs-parent="#svgAccordion">
+                        <div class="accordion-body">
+                            <p>Three User Defined Tables are used in Example 1 to create the SVG drawing:
+                            <ol>
+                                <li>udoSVGCanvas</li>
+                                <li>udoSVGGroups</li>
+                                <li>udoSVGElements</li>
+                            </ol>
+                            <img src="images/svg-smartobjects.png" class="border" alt="SVG Smart Objects"
+                                class="img-fluid">
+                            </p>
+                            <p>As User Defined Tables are not exportable from Bistrack, the relevant table names and
+                                columns used to create the example are shown below.
+                            <h5>udoSVGCanvas</h5>
+                            The <code>udoSVGCanvas</code> table is the top-level entity for individual drawings. Only
+                            branch and
+                            viewbox information are stored here. </p>
+                            <img src="images/udoSVGCanvas-screen.png" class="border" alt="udoSVGCanvas Screen"
+                                class="img-fluid">
+                            <br />
+                            <h6 class="pt-3">SQL Definition:</h6>
+                            <pre>TABLE [dbo].[udoSVGCanvas]
+-- A string with four space-delimited components: min-x min-y width height
+[ViewBox] [varchar](50) NULL,
+[BranchID] [int] NULL</pre>
+                            <h5>udoSVGGroups</h5>
+                            The <code>udoSVGGroups</code> table contains information about individual groups of elements
+                            within a drawing or canvas. Each group can have a name, tooltip, z-index (for drawing
+                            order), and
+                            visibility
+                            status and can be styled together under the
+                            <g /> tag. Generally, all group entries will share the same
+                            transform value.</p>
+                            <img src="images/udoSVGGroups-screen.png" class="border" alt="udoSVGGroups Screen"
+                                class="img-fluid">
+                            <h6 class="pt-3">SQL Definition:</h6>
+                            <pre>TABLE [dbo].[udoSVGGroups]
+/*
+   Each canvas consists of one or more groups.
+*/
+CREATE TABLE [dbo].[udoSVGGroups]
+    ...
+    -- Typically all items in a group should have the same transform
+	[Transform] [varchar](255) NULL,
+	-- Links to udoSVGCanvas.UserDefinedObjectID
+	[SVGCanvasID] [int] NULL,
+	-- Group CSS class
+	[Class] [varchar](50) NULL,
+	[Text] [varchar](75) NULL,
+	-- Text x and y coords
+	[TextX] [numeric](13, 5) NULL,
+	[TextY] [numeric](13, 5) NULL,
+	-- Inline text styling (overrides class)
+	[TextStyle] [varchar](500) NULL,
+	-- Text CSS class
+	[TextClass] [varchar](50) NULL,
+	[Style] [varchar](500) NULL,
+	[ToolTip] [varchar](500) NULL,
+	[zIndex] [numeric](4, 0) NULL
+</pre>
+                            <h5>udoSVGElements</h5>
+                            The <code>udoSVGElements</code> table contains information about individual elements within
+                            a group. Similar to groups, each element can have a name, tooltip, z-index (for drawing
+                            order), and visibility
+                            status. Elements can be styled individually under the
+                            <path /> tag. Each element must have a path definition (d
+                            attribute).</p>
+                            <h6 class="pt-3">SQL Definition:</h6>
+                            <pre>
+/*
+   Each group contains one or more elements. Elements should be
+   converted to a path object ("d") instead of using the various types
+   (e.g., rect, circle, etc.).
+*/
+CREATE TABLE [dbo].[udoSVGElements]
+    ...
+    -- Links to udoSVGGroups.UserDefinedObjectID
+	[SVGGroupID] [int] NULL,
+	-- HTML ID
+	[ID] [varchar](50) NULL,
+	-- Path CSS class
+	[Class] [varchar](50) NULL,
+	[d] [varchar](255) NULL,
+	[Transform] [varchar](255) NULL,
+	[Style] [varchar](500) NULL,
+	[Text] [varchar](75) NULL,
+	-- Inline text styling (overrides class)
+	[TextStyle] [varchar](500) NULL,
+	-- Text x and y coords
+	[TextX] [numeric](13, 5) NULL,
+	[TextY] [numeric](13, 5) NULL,
+    -- Text CSS class
+	[TextClass] [varchar](50) NULL,
+	-- Tooltip text / HTML
+	[ToolTip] [varchar](500) NULL,
+	-- For odering path elements
+	[zIndex] [numeric](4, 0) NULL,
+
+                            </pre>
+                            <img src="images/udoSVGElements-screen.png" class="border" alt="udoSVGElements Screen"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion Item -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEx1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEx1" aria-expanded="true" aria-controls="collapseEx1">
+                            <strong>Examples</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseEx1" class="accordion-collapse collapse" aria-labelledby="headingEx1"
                         data-bs-parent="#svgAccordion">
                         <div class="accordion-body">
                             <div class="col-md-4">
                                 <a href="images/yardMap.png"><img src="images/yardMap-thumb.png" alt="SVG Example"
                                         class="img-fluid float-start me-3 mb-3"></a>
                             </div>
-                            <ul class="list-group list-group-flush">
+                            <h6>Example 1</h6>
+                            <a href="svg-example1.html">SVG Example (static HTML)</a>
+                            <p>Hover over the drawn elements to see titles and hover actions. </p>
+                            <ul class="list-group list-group-numbered">
                                 <li class="list-group-item">This example demonstrates the use of SVG in a web page and
                                     includes
                                     numerous design elements
@@ -81,127 +275,75 @@
                         </div>
                     </div>
                 </div>
+                <!-- Accordion Item -->
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
+                    <h2 class="accordion-header" id="headingSQL">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <strong>Bistrack Tables</strong>
+                            data-bs-target="#collapseSQL" aria-expanded="false" aria-controls="collapseSQL">
+                            <strong>SQL</strong>
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#svgAccordion">
-                        <div class="accordion-body">
-                            <p>Three User Defined Tables are used in this example:
-                            <ol>
-                                <li>udoSVGCanvas</li>
-                                <li>udoSVGGroups</li>
-                                <li>udoSVGElements</li>
-                            </ol>
-                            <img src="images/svg-smartobjects.png" class="border" alt="SVG Smart Objects"
-                                class="img-fluid">
-                            </p>
-                            <p>As User Defined Tables are not exportable from Bistrack, the relevant table names and
-                                columns used to create the example are shown below.
-                            <h5>udoSVGCanvas</h5>
-                            The <code>udoSVGCanvas</code> table is the top-level entity for individual drawings. Only
-                            branch and
-                            viewbox information are stored here. </p>
-                            <img src="images/udoSVGCanvas-screen.png" class="border" alt="udoSVGCanvas Screen"
-                                class="img-fluid">
-                            <p>SQL definition below:</p>
-                            <pre>TABLE [dbo].[udoSVGCanvas]
--- A string with four space-delimited components: min-x min-y width height
-[ViewBox] [varchar](50) NULL,
-[BranchID] [int] NULL</pre>
-                            <h5>udoSVGGroups</h5>
-                            The <code>udoSVGGroups</code> table contains information about individual groups of elements
-                            within a drawing. Each group can have a name, tooltip, z-index (for drawing order), and
-                            visibility
-                            status. </p>
-                            <img src="images/udoSVGGroups-screen.png" class="border" alt="udoSVGGroups Screen"
-                                class="img-fluid">
-                            <p>SQL definition below:</p>
-                            <pre>TABLE [dbo].[udoSVGGroups]
-/*
-   Each canvas is made up of one or more groups.
-*/
-CREATE TABLE [dbo].[udoSVGGroups]
-    ...
-    -- Typically all items in a group should have the same transform
-	[Transform] [varchar](255) NULL,
-	-- Links to udoSVGCanvas.UserDefinedObjectID
-	[SVGCanvasID] [int] NULL,
-	-- Group CSS class
-	[Class] [varchar](50) NULL,
-	[Text] [varchar](75) NULL,
-	-- Text x and y coords
-	[TextX] [numeric](13, 5) NULL,
-	[TextY] [numeric](13, 5) NULL,
-	-- Inline text styling (overrides class)
-	[TextStyle] [varchar](500) NULL,
-	-- Text CSS class
-	[TextClass] [varchar](50) NULL,
-	[Style] [varchar](500) NULL,
-	[ToolTip] [varchar](500) NULL,
-	[zIndex] [numeric](4, 0) NULL
-
-/*
-   Each group contains one or more elements. Elements should be
-   converted to a path object ("d") instead of using the various types
-   (e.g., rect, circle, etc.).
-*/
-CREATE TABLE [dbo].[udoSVGElements]
-    ...
-    -- Links to udoSVGGroups.UserDefinedObjectID
-	[SVGGroupID] [int] NULL,
-	-- HTML ID
-	[ID] [varchar](50) NULL,
-	-- Path CSS class
-	[Class] [varchar](50) NULL,
-	[d] [varchar](255) NULL,
-	[Transform] [varchar](255) NULL,
-	[Style] [varchar](500) NULL,
-	[Text] [varchar](75) NULL,
-	-- Inline text styling (overrides class)
-	[TextStyle] [varchar](500) NULL,
-	-- Text x and y coords
-	[TextX] [numeric](13, 5) NULL,
-	[TextY] [numeric](13, 5) NULL,
-    -- Text CSS class
-	[TextClass] [varchar](50) NULL,
-	-- Tooltip text / HTML
-	[ToolTip] [varchar](500) NULL,
-	-- For odering path elements
-	[zIndex] [numeric](4, 0) NULL,
-</pre>
-                            <img src="images/udoSVGElements-screen.png" class="border" alt="udoSVGElements Screen"
-                                class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    <div id="collapseSQL" class="accordion-collapse collapse" aria-labelledby="headingSQL"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h6>Example 1</h6>
+                            <p>The JSON used by Example 1 was created by running SQL against the three udo tables,
+                                udoSVGCanvas, udoSVGGroups, and udoSVGElements (see also Bistrack Tables section). The
+                                SQL used to create example one is
+                                shown below:</p>
+                            <pre>
+SELECT
+  c.BranchID
+    , c.[Name]
+    , c.ViewBox
+    , ( /* Sub selects create nested JSON structure for groups and elements */
+        SELECT
+    g.[Name]
+            , g.Style
+            , g.Transform
+            , g.Class
+            , g.Text
+            , g.TextStyle
+            , g.TextX
+            , g.TextY
+            , g.TextClass
+            , g.ToolTip
+            , g.zIndex
+        , (SELECT
+      e.ID
+            , e.d
+            , e.Transform
+            , e.Class
+            , e.Style
+            , e.Text
+            , e.TextStyle
+            , e.TextX
+            , e.TextY
+            , e.TextClass
+            , e.ToolTip
+            , e.zIndex
+    FROM udoSVGElements e WITH(NOLOCK)
+    WHERE e.Deleted = 0
+      AND e.SVGGroupID = g.UserDefinedObjectID
+    ORDER BY e.zIndex
+    FOR JSON PATH) AS [Elements]
+  FROM udoSVGGroups g
+  WHERE g.Deleted = 0
+    AND g.SVGCanvasID = c.UserDefinedObjectID
+  ORDER BY g.zIndex
+  FOR JSON PATH) AS [Groups]
+FROM udoSVGCanvas c WITH(NOLOCK)
+WHERE c.Deleted = 0
+FOR JSON PATH
+                                </pre>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
