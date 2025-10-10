@@ -96,10 +96,11 @@
                             <h5 class="pt-3">Load</h5>
                             <p>Determine how you will load the SVG into your web
                                 page.</p>
-                            <p> <a href="svg-example-1.html">Example 1</a> uses JSON data to create the SVG
+                            <p> <a href="svg-example1.html">Example 1</a> uses JSON data to create the SVG
                                 elements dynamically.<br />
-                                <a href="svg-example-2.html">Example 2</a>
-                                loads the SVG directly file using Ajax.
+                                <a href="svg-example2.html">Example 2</a>
+                                loads the SVG directly file using Ajax.<br />
+                                <a href="images/lbb-plain.svg">Example SVG file (Open with text editor)</a>
                             </p>
                             <p> Both allow for interactivity and styling
                                 using
@@ -327,7 +328,7 @@ SELECT
       AND e.SVGGroupID = g.UserDefinedObjectID
     ORDER BY e.zIndex
     FOR JSON PATH) AS [Elements]
-  FROM udoSVGGroups g
+  FROM udoSVGGroups g WITH(NOLOCK)
   WHERE g.Deleted = 0
     AND g.SVGCanvasID = c.UserDefinedObjectID
   ORDER BY g.zIndex

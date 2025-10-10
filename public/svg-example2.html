@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Example 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        #svg-container {
+            width: 100%;
+            height: 90vh;
+            border: 1px solid #b3b1b2;
+        }
+
+        /*
+           This ensures the SVG content inside the container also scales properly.
+           Set object-fit to fill to stretch the image to fill the container.
+         */
+        #svg-container>svg {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        svg {
+            border: 1px solid #ddd;
+            background-color: #f8f9fa;
+        }
+
+        text {
+            font-family: Arial, sans-serif;
+            /*fill: #333;*/
+        }
+
+        #Building {
+            fill: aqua;
+        }
+
+        /* Example of hover effect for buildings */
+        #Building:hover {
+            fill: #DA4567;
+            /* Changes the fill color */
+            cursor: pointer;
+            /* Changes cursor to a pointer */
+        }
+
+        /* Example text class for Area01 using rem. Note that any Style properties will override this */
+        .area01 {
+            font-size: .25rem;
+            fill: rgb(236, 130, 213);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/save-svg-as-png/1.4.17/saveSvgAsPng.min.js"></script>
+    <div class="container">
+        <div id="svg-container"></div>
+        <button class="btn btn-primary mt-3"
+            onclick="saveSvgAsPng(document.getElementById('yardMap-svg'), 'Example2.png', {scale: 5});">Download
+            PNG</button>
+        <button type="button" class="btn btn-primary mt-3" onclick="toggleGroupVis('Extras_Group')">
+            Toggle Extras Group
+        </button>
+    </div>
+
+    <!-- Bootstrap JS and Popper for tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Simple function to toggle visibility of all SVG elements in a group by group name
+        function toggleGroupVis(groupName) {
+            const extras = document.getElementById(`${groupName}`);
+            if (!extras || extras.length === 0) {
+                console.warn(`No elements found with id="${groupName}"`);
+                return;
+            }
+            if (extras.style) {
+                if (extras.style.display === 'none') {
+                    extras.style.display = '';
+                } else {
+                    extras.style.display = 'none';
+                }
+                return;
+            }
+        }
+
+        // Simple function to extract the first x,y coords from a path d attribute
+        function getXYFromD(d) {
+            // Simple function to extract the first x,y coords from a path d attribute
+            const match = d.match(/M\s*([\d.-]+),\s*([\d.-]+)/);
+            if (match) {
+                return { x: parseFloat(match[1]), y: parseFloat(match[2]) };
+            }
+            return null;
+        }
+
+        // Function to add text to an SVG element if Text property is present
+        function addText(obj) {
+            // TODO: Set z-index for text to 999?
+            if (obj.Text) {
+                const textElement = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                if (!obj.TextX || !obj.TextY) {
+                    // If no TextX or TextY is provided, try to extract from the path d attribute
+                    if (obj.d) {
+                        const coords = getXYFromD(obj.d);
+                        if (coords) {
+                            textElement.setAttribute("x", obj.TextX || coords.x + 2);
+                            textElement.setAttribute("y", obj.TextY || coords.y + 2);
+                        } else {
+                            textElement.setAttribute("x", 0);
+                            textElement.setAttribute("y", 0);
+                        }
+                    } else {
+                        textElement.setAttribute("x", 0);
+                        textElement.setAttribute("y", 0);
+                    }
+                } else {
+                    textElement.setAttribute("x", obj.TextX);
+                    textElement.setAttribute("y", obj.TextY);
+                }
+                if (obj.TextStyle) textElement.setAttribute("style", obj.TextStyle);
+                if (obj.TextClass) textElement.setAttribute("class", obj.TextClass);
+                textElement.textContent = obj.Text;
+                return textElement;
+            }
+            return null;
+        }
+
+        // Function to add a Bootstrap tooltip to an SVG element
+        function addToolTip(element, tooltip) {
+            element.setAttribute("data-bs-toggle", "tooltip");
+            element.setAttribute("data-bs-html", "true");
+            element.setAttribute("title", tooltip);
+            element.style.cursor = "pointer"; // Change cursor to pointer to indicate interactivity
+        }
+
+        window.onload = function () {
+            // Path to the SVG file
+            const svgPath = 'images/lbb-plain.svg';
+
+            // Get the container element
+            const container = document.getElementById('svg-container');
+
+            if (container) {
+                // Fetch the SVG content from the server
+                fetch(svgPath)
+                    .then(response => {
+                        // Check if the request was successful
+                        if (!response.ok) {
+                            throw new Error('Request failed with status ' + response.status);
+                        }
+                        return response.text();
+                    })
+                    .then(svgContent => {
+                        // Insert the SVG content into the container
+                        container.innerHTML = svgContent;
+                        // Initialize Bootstrap tooltips
+                        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+                        tooltipTriggerList.forEach(tooltipTriggerEl => {
+                            new bootstrap.Tooltip(tooltipTriggerEl);
+                        });
+
+                    })
+                    .catch(error => {
+                        console.error('There was a problem fetching the SVG file:', error);
+                        container.innerHTML = '<p class="text-danger">Failed to load SVG file.</p>';
+                    });
+            } else {
+                console.error('SVG container not found');
+            }
+
+        };
+    </script>
+</body>
+
+</html>
