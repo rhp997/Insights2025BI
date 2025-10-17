@@ -14,33 +14,35 @@ This customer-led advanced session builds on techniques from previous conference
 - Adam Bartlett - Arnold Lumber
 - Steve Dodson - Dodson Wholesale Lumber
 
+## Using This Repo
+
+This repo contains a lightweight Express server that will run the examples on http://localhost:3005
+
+To use this feature, [download and install Node.js](https://nodejs.org/en/download).
+
+Next, clone the repo to a local directory and change directory into your repo clone. Create the required packages using npm:
+
+```sh
+npm init -y
+npm install express
+```
+
+Start the server with:
+
+```sh
+node server.js
+```
+
+Once started, navigate to [localhost on port 3005:](http://localhost:3005) in a browser. The public/index.html page should be displayed.
+
 ## Introduction
 
-Nerd alert
-Build on Rick's JSON techniques
+The goal of this presentation is to provide Bistrack BI developers with a set of tools to help solve real problems with actionable data. Much of the focus will be on web-based technologies such as HTML, CSS, and JSON. As Bistrack continues to mature as a web platform, this tech stack is all the more relevant.
 
-## SVG
+As each business is unique and one-size-fits-all applications rarely work for everyone, we hope to provide tools instead of full-blown applications. Thus, the provided examples will be minimialist to outline a concept. Some assembly required.
 
-Exploring the use of Scalable Vector Graphics (SVG) for dynamic and interactive BI dashboards.
-
-## JSON & SQL
-
-Leveraging JSON for data structuring and SQL for efficient querying to enhance BI workflows.
-
-## Charts.js?
-
-Yes, no, maybe?
-
-## Power BI
-
-Demo the awesomeness and discuss pros/cons
-
-## Developer Environment
-
-Configure VS Code with CoPilot
-Use version control (GitHub)
-
-## Advanced BI Tips & Tricks
-
-Sharing expert tips and tricks to maximize the potential of your BI tools and techniques.
-Custom tables and aggregation
+TODO: Will the SVG load work in BisTrack? See SVG Test Fetch (export this dashboard?); fetch an SVG file from the icon website?
+TODO: Add a note about Settings Sync to VS Code environment
+TODO: Add a note about GitHub integration?
+TODO: Export dashboards?
+TODO: Add verbiage about having a container or similar on the network that runs a web server that you can access for ETL
