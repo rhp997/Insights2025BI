@@ -1,0 +1,486 @@
+{
+    "columns": [
+        {
+            "name": "Begin Date",
+            "type": "DateTime",
+            "value": ""
+        },
+        {
+            "name": "Required Locs",
+            "type": "Decimal",
+            "value": ""
+        },
+        {
+            "name": "Completed Locs",
+            "type": "Decimal",
+            "value": ""
+        },
+        {
+            "name": "Incomplete Locs",
+            "type": "Decimal",
+            "value": ""
+        },
+        {
+            "name": "Total Counted",
+            "type": "Decimal",
+            "value": ""
+        },
+        {
+            "name": "Total Correct",
+            "type": "Decimal",
+            "value": ""
+        },
+        {
+            "name": "Total Incorrect",
+            "type": "Decimal",
+            "value": ""
+        }
+    ],
+    "data": [
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "03 - AUG - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "51"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "0"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "51"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "0"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "0"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "0"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "10 - AUG - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "51"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "46"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "5"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "527"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "507"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "20"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "17 - AUG - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "35"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "32"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "3"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "294"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "285"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "9"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "24 - AUG - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "36"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "0"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "36"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "0"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "0"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "0"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "31 - AUG - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "46"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "43"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "3"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "441"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "426"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "15"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "07 - SEP - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "40"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "37"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "3"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "360"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "348"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "12"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "14 - SEP - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "39"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "36"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "3"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "417"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "403"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "14"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "21 - SEP - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "41"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "38"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "3"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "386"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "371"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "15"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "28 - SEP - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "41"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "37"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "4"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "529"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "504"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "25"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "05 - OCT - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "38"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "35"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "3"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "348"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "337"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "11"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "12 - OCT - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "35"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "33"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "2"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "306"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "301"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "5"
+            }
+        ],
+        [
+            {
+                "name": "Begin Date",
+                "type": "Date",
+                "value": "19 - OCT - 25"
+            },
+            {
+                "name": "Required Locs",
+                "type": "Decimal",
+                "value": "46"
+            },
+            {
+                "name": "Completed Locs",
+                "type": "Decimal",
+                "value": "42"
+            },
+            {
+                "name": "Incomplete Locs",
+                "type": "Decimal",
+                "value": "4"
+            },
+            {
+                "name": "Total Counted",
+                "type": "Decimal",
+                "value": "42"
+            },
+            {
+                "name": "Total Correct",
+                "type": "Decimal",
+                "value": "28"
+            },
+            {
+                "name": "Total Incorrect",
+                "type": "Decimal",
+                "value": "14"
+            }
+        ]
+    ],
+    "error": ""
+}
