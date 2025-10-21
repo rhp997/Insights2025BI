@@ -124,6 +124,7 @@
                         });
                     });
 
+                    // Debug: Log the cycData object to the console
                     console.log(cycData)
 
                     // Render the current week charts
@@ -190,37 +191,37 @@
                         const selVal = $(this).val();
                         // Get the "Completed Selected" chart and update it with the selected week data
                         const compChart = Chart.getChart("cyc_compl_sel");
+                        // This logic could be refactored into a function to reduce redundancy
                         if (compChart) {
                             if (selVal && cycData[selVal]) {
-                                // Set the data and title for the selected week
-                                compChart.data.datasets[0].data = [
+                                // Selected dataset
+                                const data = [
                                     cycData[selVal][dataIndices.complete],
                                     cycData[selVal][dataIndices.incomplete],
                                 ];
-                                compChart.options.plugins.title.text =
-                                    selVal + " Completed";
+                                // Get a new chart config to pass to getLabelAndPct
+                                const fullconfig = getChartConfig(
+                                    "cyc_compl_sel",
+                                    "",
+                                    "Completed",
+                                    data
+                                );
+                                // Get the inner label and percentage accurate values; account for division by 0 and 0% case. Note the getLabelAndPct function will update the dataset as needed.
+                                const { label: innerLabel, percent } = getLabelAndPct(fullconfig);
+                                // Update the chart data
+                                compChart.data.datasets[0].data = data;
+                                // Update the chart title
+                                compChart.options.plugins.title.text = selVal + " Completed";
+                                // Set the background color based on the percentage accurate
+                                compChart.data.datasets[0].backgroundColor[0] = getBgColor(percent);
+                                // Update the inner label (plugin) with the percentage completed label
+                                compChart.config.plugins[0].label = innerLabel
+                                // Redraw the chart with the new data
+                                compChart.update();
                             } else {
-                                compChart.data.datasets[0].data = [
-                                    cycData[lblAllWeeks][dataIndices.complete],
-                                    cycData[lblAllWeeks][dataIndices.incomplete],
-                                ];
-                                compChart.options.plugins.title.text =
-                                    lblAllWeeks + " Completed";
+                                console.warn("Selected value not found in cycData");
                             }
-                            compChart.data.datasets[0].label = selVal || lblAllWeeks;
-                            const pctCompl = Math.round(
-                                (compChart.data.datasets[0].data[0] /
-                                    (compChart.data.datasets[0].data[0] +
-                                        compChart.data.datasets[0].data[1])) *
-                                100
-                            );
-                            // Set the background color based on the percentage completed
-                            compChart.data.datasets[0].backgroundColor[0] =
-                                getBgColor(pctCompl);
-                            // Update the inner label (plugin) with the percentage completed label
-                            compChart.config.plugins[0].label = pctCompl.toString() + "%";
-                            // Redraw the chart with the new data
-                            compChart.update();
+
                         } else {
                             console.error("cyc_compl_sel chart not found");
                         }
@@ -228,34 +229,33 @@
                         const accChart = Chart.getChart("cyc_acc_sel"); // <canvas> id
                         if (accChart) {
                             if (selVal && cycData[selVal]) {
-                                // Set the data and title for the selected week
-                                accChart.data.datasets[0].data = [
+                                // Selected dataset
+                                const data = [
                                     cycData[selVal][dataIndices.accurate],
                                     cycData[selVal][dataIndices.inaccurate],
                                 ];
+                                // Get a new chart config to pass to getLabelAndPct
+                                const fullconfig = getChartConfig(
+                                    "cyc_acc_sel",
+                                    "",
+                                    "Accurate",
+                                    data
+                                );
+                                // Get the inner label and percentage accurate values; account for division by 0 and 0% case. Note the getLabelAndPct function will update the dataset as needed.
+                                const { label: innerLabel, percent } = getLabelAndPct(fullconfig);
+                                // Update the chart data
+                                accChart.data.datasets[0].data = data;
+                                // Update the chart title
                                 accChart.options.plugins.title.text = selVal + " Accuracy";
+                                // Set the background color based on the percentage accurate
+                                accChart.data.datasets[0].backgroundColor[0] = getBgColor(percent);
+                                // Update the inner label (plugin) with the percentage accurate label
+                                accChart.config.plugins[0].label = innerLabel
+                                // Redraw the chart with the new data
+                                accChart.update();
                             } else {
-                                accChart.data.datasets[0].data = [
-                                    cycData[lblAllWeeks][dataIndices.accurate],
-                                    cycData[lblAllWeeks][dataIndices.inaccurate],
-                                ];
-                                accChart.options.plugins.title.text =
-                                    lblAllWeeks + " Accuracy";
+                                console.warn("Selected value not found in cycData");
                             }
-                            accChart.data.datasets[0].label = selVal || lblAllWeeks;
-                            const pctAcc = Math.round(
-                                (accChart.data.datasets[0].data[0] /
-                                    (accChart.data.datasets[0].data[0] +
-                                        accChart.data.datasets[0].data[1])) *
-                                100
-                            );
-                            // Set the background color based on the percentage accurate
-                            accChart.data.datasets[0].backgroundColor[0] =
-                                getBgColor(pctAcc);
-                            // Update the inner label (plugin) with the percentage accurate label
-                            accChart.config.plugins[0].label = pctAcc.toString() + "%";
-                            // Redraw the chart with the new data
-                            accChart.update();
                         } else {
                             console.error("cyc_acc_sel chart not found");
                         }
@@ -266,6 +266,84 @@
             }).fail(function (xhr, textstatus, error) {
                 console.error(
                     `Error loading JSON file ${cyc_counts}: ${textstatus}, ${error}`
+                );
+            });
+
+            /* ------------------------ COMPLETED PUT AWAYS ------------------------- */
+            // Put Aways using the newly discovered TasksB endpoint; requires the TasksB
+            // Query be enabled in config/queries.json
+            const tasksB = "data/tasksb.json";
+            $.getJSON(tasksB, function (data) {
+                // Find the object with the "Put Aways" task
+                const paObj = data.find(
+                    (obj) => obj.hasOwnProperty("Task") && obj["Task"] === "Put Aways"
+                );
+                if (paObj) {
+                    createQVDonut(
+                        getChartConfig("pa_complete", "Put Aways Complete", "Completed", [
+                            paObj.Completed,
+                            paObj.TO_DO,
+                        ])
+                    );
+                } else {
+                    console.error("Put Aways not found on the TasksB object");
+                }
+            }).fail(function (xhr, textstatus, error) {
+                console.error(
+                    `Error loading JSON file ${tasksB}: ${textstatus}, ${error}`
+                );
+            });
+
+            /* ------------------------ PUT AWAYS BY LOCATION ------------------------- */
+            const pa_by_loc = "data/db_pa_by_loc.json";
+            $.getJSON(pa_by_loc, function (data) {
+                // Register the Chart.js Data Labels plugin
+                // Chart.register(ChartDataLabels);
+                if (data.data && data.data.length > 0) {
+                    let paData = [];
+                    $.each(data.data, function (i, item) {
+                        let line = { loc: undefined, cnt: undefined };
+                        $.each(item, function (j, cell) {
+                            // Check if the cell is a location and count
+                            if (cell.name === "LOCATION") {
+                                line.loc = cell.value;
+                            } else if (cell.name === "PA_ITEMS") {
+                                line.cnt = parseInt(cell.value) || 0;
+                            }
+                            // If we have both location and count, add to the data array
+                            if (line.loc && line.cnt) {
+                                paData.push(line);
+                            }
+                        });
+                    });
+                    // Sort by count descending to make a more visually appealing chart
+                    paData.sort((a, b) => b.cnt - a.cnt);
+
+                    const pas = {};
+                    let ttlPAs = 0;
+                    // Use the location as the key (series names) and the count as the value
+                    paData.forEach((item, index) => {
+                        pas[item.loc] = item.cnt;
+                        ttlPAs += parseInt(item.cnt);
+                    });
+
+                    const paConfig = getPieChartConfig(
+                        pas,
+                        "pa_by_loc",
+                        "Put aways at location",
+                        ttlPAs + " Put aways",
+                        3
+                    );
+                    const custCtx = document
+                        .getElementById(paConfig.id)
+                        .getContext("2d");
+                    new Chart(custCtx, paConfig);
+                } else {
+                    console.warn("No data found");
+                }
+            }).fail(function (xhr, textstatus, error) {
+                console.error(
+                    `Error loading JSON file ${pa_by_loc}: ${textstatus}, ${error}`
                 );
             });
         });

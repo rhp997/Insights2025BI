@@ -1,0 +1,20 @@
+[
+    {
+        "Task": "Cycle Count Accuracy",
+        "UOM": "Items",
+        "Completed": 10,
+        "TO_DO": 8
+    },
+    {
+        "Task": "Cycle Counts",
+        "UOM": "Locations",
+        "Completed": 45,
+        "TO_DO": 46
+    },
+    {
+        "Task": "Put Aways",
+        "UOM": "Items",
+        "Completed": 40,
+        "TO_DO": 45
+    }
+]

@@ -1,0 +1,101 @@
+{
+    "columns": [
+        {
+            "name": "LOCATION",
+            "type": "String",
+            "value": ""
+        },
+        {
+            "name": "PA_ITEMS",
+            "type": "Decimal",
+            "value": ""
+        }
+    ],
+    "data": [
+        [
+            {
+                "name": "LOCATION",
+                "type": "Varchar2",
+                "value": "MM1RACK"
+            },
+            {
+                "name": "PA_ITEMS",
+                "type": "Decimal",
+                "value": "22"
+            }
+        ],
+        [
+            {
+                "name": "LOCATION",
+                "type": "Varchar2",
+                "value": "MM1SHOP"
+            },
+            {
+                "name": "PA_ITEMS",
+                "type": "Decimal",
+                "value": "22"
+            }
+        ],
+        [
+            {
+                "name": "LOCATION",
+                "type": "Varchar2",
+                "value": "MM1JIG"
+            },
+            {
+                "name": "PA_ITEMS",
+                "type": "Decimal",
+                "value": "17"
+            }
+        ],
+        [
+            {
+                "name": "LOCATION",
+                "type": "Varchar2",
+                "value": "MM1EIGHT"
+            },
+            {
+                "name": "PA_ITEMS",
+                "type": "Decimal",
+                "value": "11"
+            }
+        ],
+        [
+            {
+                "name": "LOCATION",
+                "type": "Varchar2",
+                "value": "MM1AWNG"
+            },
+            {
+                "name": "PA_ITEMS",
+                "type": "Decimal",
+                "value": "9"
+            }
+        ],
+        [
+            {
+                "name": "LOCATION",
+                "type": "Varchar2",
+                "value": "MM1"
+            },
+            {
+                "name": "PA_ITEMS",
+                "type": "Decimal",
+                "value": "5"
+            }
+        ],
+        [
+            {
+                "name": "LOCATION",
+                "type": "Varchar2",
+                "value": "MM1FIVE"
+            },
+            {
+                "name": "PA_ITEMS",
+                "type": "Decimal",
+                "value": "1"
+            }
+        ]
+    ],
+    "error": ""
+}
