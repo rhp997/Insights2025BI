@@ -1,0 +1,2858 @@
+<DASHBOARD>
+   <HEADER>
+      <DashboardID>
+      100637
+      </DashboardID>
+      <Name>
+      BTUC25: Drilldowns
+      </Name>
+      <GroupName>
+      BTUC25
+      </GroupName>
+      <Active>
+      True
+      </Active>
+      <DrillDownTargetOnly>
+      False
+      </DrillDownTargetOnly>
+      <DashboardType>
+      5
+      </DashboardType>
+      <URL>
+      
+      </URL>
+      <DataSource>
+      1
+      </DataSource>
+      <AlternativeServer>
+      
+      </AlternativeServer>
+      <AlternativeDatabase>
+      
+      </AlternativeDatabase>
+      <BranchAccess>
+      0
+      </BranchAccess>
+      <BackColor>
+      16777215
+      </BackColor>
+      <LeftMargin>
+      5%
+      </LeftMargin>
+      <RightMargin>
+      5%
+      </RightMargin>
+      <CenterMargin>
+      10%
+      </CenterMargin>
+      <TitleHeight>
+      30
+      </TitleHeight>
+      <TitleBackColor>
+      0
+      </TitleBackColor>
+      <TitleCaption>
+      
+      </TitleCaption>
+      <TitleFontName>
+      Tahoma
+      </TitleFontName>
+      <TitleFontSize>
+      13
+      </TitleFontSize>
+      <TitleFontBold>
+      True
+      </TitleFontBold>
+      <TitleFontItalic>
+      False
+      </TitleFontItalic>
+      <TitleFontColor>
+      16777215
+      </TitleFontColor>
+      <AvailableToAllUsers>
+      True
+      </AvailableToAllUsers>
+      <CreatedByID>
+      24
+      </CreatedByID>
+      <DateTimeCreated>
+      10/20/2025 11:18:24 AM
+      </DateTimeCreated>
+      <SystemTemplate>
+      False
+      </SystemTemplate>
+      <SortName>
+      
+      </SortName>
+      <SmartTileLabel>
+      
+      </SmartTileLabel>
+      <SmartTileSQL>
+      
+      </SmartTileSQL>
+      <SmartTileSize>
+      0
+      </SmartTileSize>
+      <BisTrackCloudAccess>
+      False
+      </BisTrackCloudAccess>
+      <DisableAutoRefresh>
+      False
+      </DisableAutoRefresh>
+      <TileXML>
+      
+      </TileXML>
+      <PageHeaderScripts>
+      
+      </PageHeaderScripts>
+      <PageFooterScripts>
+      
+      </PageFooterScripts>
+      <ExtraStyle>
+              body {|13||10|            background-color: #f8f9fa;|13||10|            /* A common light gray */|13||10|            padding: 30px;|13||10|            /* Add some padding around the main container */|13||10|            margin: 0;|13||10|            font-family: Arial, sans-serif;|13||10|        }|13||10||13||10|        .main-column-90 {|13||10|            /* 90% Width and Centering */|13||10|            width: 90%;|13||10|            margin-left: auto;|13||10|            margin-right: auto;|13||10||13||10|            /* White Interior and Padding */|13||10|            background-color: white;|13||10|            padding: 20px;|13||10||13||10|            /* Slight Shadow (Equivalent to Bootstrap&apos;s .shadow-sm) */|13||10|            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);|13||10||13||10|            /* Rounded Corners */|13||10|            border-radius: 0.25rem;|13||10|        }|13||10||13||10|        .stacking-row {|13||10|            width: 100%;|13||10|            /* Ensure it takes full width of the parent */|13||10|            margin-bottom: 15px;|13||10|            /* Space between the rows (equivalent to mb-3) */|13||10|            box-sizing: border-box;|13||10|            /* Include padding and border in element&apos;s total width/height */|13||10|        }|13||10||13||10|        .inner-row-content {|13||10|            padding: 1rem;|13||10|            border: 1px solid #dee2e6;|13||10|            background-color: #e9ecef;|13||10|            /* Very light gray for contrast */|13||10|            border-radius: 0.25rem;|13||10|        }|13||10||13||10|        .inner-row-content h5,|13||10|        .inner-row-content p {|13||10|            margin-top: 0;|13||10|            margin-bottom: 0.5rem;|13||10|        }|13||10||13||10|        .inner-row-content p:last-child {|13||10|            margin-bottom: 0;|13||10|        }|13||10||13||10|        .button-primary {|13||10|            padding: 8px 16px;|13||10|            background-color: #007bff;|13||10|            color: white;|13||10|            border: none;|13||10|            border-radius: 0.25rem;|13||10|            cursor: pointer;|13||10|            text-decoration: none;|13||10|            display: inline-block;|13||10|            margin: 15px;|13||10|        }
+      </ExtraStyle>
+      <BodyOnLoadFunction>
+      
+      </BodyOnLoadFunction>
+      <Width>
+      
+      </Width>
+      <DisableParameterRefresh>
+      False
+      </DisableParameterRefresh>
+      <Notes>
+      
+      </Notes>
+      <CreatedByName>
+      Steve Dodson
+      </CreatedByName>
+   </HEADER>
+   <COMPONENTS>
+      <COMPONENT_1>
+         <DashboardComponentID>
+         209370
+         </DashboardComponentID>
+         <ColumnNumber>
+         1
+         </ColumnNumber>
+         <Sequence>
+         1
+         </Sequence>
+         <ComponentType>
+         21
+         </ComponentType>
+         <Height>
+         300
+         </Height>
+         <DrillDownType>
+         0
+         </DrillDownType>
+         <DrillDownLinkID>
+         
+         </DrillDownLinkID>
+         <DrillDownFile>
+         
+         </DrillDownFile>
+         <DrillDownParameterID1>
+         
+         </DrillDownParameterID1>
+         <DrillDownParameterID2>
+         
+         </DrillDownParameterID2>
+         <DrillDownParameterCaption1>
+         
+         </DrillDownParameterCaption1>
+         <DrillDownParameterCaption2>
+         
+         </DrillDownParameterCaption2>
+         <SQLScript>
+         
+         </SQLScript>
+         <SQLPrompt1>
+         
+         </SQLPrompt1>
+         <SQLPrompt2>
+         
+         </SQLPrompt2>
+         <SQLPrompt3>
+         
+         </SQLPrompt3>
+         <SQLPrompt4>
+         
+         </SQLPrompt4>
+         <SQLPrompt5>
+         
+         </SQLPrompt5>
+         <SQLPrompt6>
+         
+         </SQLPrompt6>
+         <SQLPrompt7>
+         
+         </SQLPrompt7>
+         <SQLPrompt8>
+         
+         </SQLPrompt8>
+         <SQLPrompt9>
+         
+         </SQLPrompt9>
+         <SQLPrompt10>
+         
+         </SQLPrompt10>
+         <SQLPromptListID1>
+         
+         </SQLPromptListID1>
+         <SQLPromptListID2>
+         
+         </SQLPromptListID2>
+         <SQLPromptListID3>
+         
+         </SQLPromptListID3>
+         <SQLPromptListID4>
+         
+         </SQLPromptListID4>
+         <SQLPromptListID5>
+         
+         </SQLPromptListID5>
+         <SQLPromptListID6>
+         
+         </SQLPromptListID6>
+         <SQLPromptListID7>
+         
+         </SQLPromptListID7>
+         <SQLPromptListID8>
+         
+         </SQLPromptListID8>
+         <SQLPromptListID9>
+         
+         </SQLPromptListID9>
+         <SQLPromptListID10>
+         
+         </SQLPromptListID10>
+         <DrillDownParameterID1As>
+         
+         </DrillDownParameterID1As>
+         <DrillDownParameterID2As>
+         
+         </DrillDownParameterID2As>
+         <DrillDownParameterCaption1As>
+         
+         </DrillDownParameterCaption1As>
+         <DrillDownParameterCaption2As>
+         
+         </DrillDownParameterCaption2As>
+         <Width>
+         300
+         </Width>
+         <ShowSQLWarning>
+         True
+         </ShowSQLWarning>
+         <DashboardName>
+         
+         </DashboardName>
+         <SmartViewName>
+         
+         </SmartViewName>
+         <BackColor>
+         16777215
+         </BackColor>
+         <BorderColor>
+         16777215
+         </BorderColor>
+         <ExtraStyle>
+                     /* 90% Width and Centering */
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* White Interior and Padding */
+            background-color: white;
+            padding: 20px;
+
+            /* Slight Shadow (Equivalent to Bootstrap&apos;s .shadow-sm) */
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+            /* Rounded Corners */
+            border-radius: 0.25rem;
+         </ExtraStyle>
+         <MarginBottom>
+         0
+         </MarginBottom>
+         <MarginLeft>
+         0
+         </MarginLeft>
+         <MarginRight>
+         0
+         </MarginRight>
+         <MarginTop>
+         0
+         </MarginTop>
+         <Name>
+         main-column-90-START
+         </Name>
+         <PaddingBottom>
+         0
+         </PaddingBottom>
+         <PaddingLeft>
+         0
+         </PaddingLeft>
+         <PaddingRight>
+         0
+         </PaddingRight>
+         <PaddingTop>
+         0
+         </PaddingTop>
+         <ShowBackground>
+         True
+         </ShowBackground>
+         <ShowBorder>
+         False
+         </ShowBorder>
+      </COMPONENT_1>
+      <COMPONENT_2>
+         <DashboardComponentID>
+         209375
+         </DashboardComponentID>
+         <ColumnNumber>
+         1
+         </ColumnNumber>
+         <Sequence>
+         2
+         </Sequence>
+         <ComponentType>
+         8
+         </ComponentType>
+         <Height>
+         95
+         </Height>
+         <DrillDownType>
+         0
+         </DrillDownType>
+         <DrillDownLinkID>
+         
+         </DrillDownLinkID>
+         <DrillDownFile>
+         
+         </DrillDownFile>
+         <DrillDownParameterID1>
+         
+         </DrillDownParameterID1>
+         <DrillDownParameterID2>
+         
+         </DrillDownParameterID2>
+         <DrillDownParameterCaption1>
+         
+         </DrillDownParameterCaption1>
+         <DrillDownParameterCaption2>
+         
+         </DrillDownParameterCaption2>
+         <SQLScript>
+         
+         </SQLScript>
+         <SQLPrompt1>
+         
+         </SQLPrompt1>
+         <SQLPrompt2>
+         
+         </SQLPrompt2>
+         <SQLPrompt3>
+         
+         </SQLPrompt3>
+         <SQLPrompt4>
+         
+         </SQLPrompt4>
+         <SQLPrompt5>
+         
+         </SQLPrompt5>
+         <SQLPrompt6>
+         
+         </SQLPrompt6>
+         <SQLPrompt7>
+         
+         </SQLPrompt7>
+         <SQLPrompt8>
+         
+         </SQLPrompt8>
+         <SQLPrompt9>
+         
+         </SQLPrompt9>
+         <SQLPrompt10>
+         
+         </SQLPrompt10>
+         <SQLPromptListID1>
+         
+         </SQLPromptListID1>
+         <SQLPromptListID2>
+         
+         </SQLPromptListID2>
+         <SQLPromptListID3>
+         
+         </SQLPromptListID3>
+         <SQLPromptListID4>
+         
+         </SQLPromptListID4>
+         <SQLPromptListID5>
+         
+         </SQLPromptListID5>
+         <SQLPromptListID6>
+         
+         </SQLPromptListID6>
+         <SQLPromptListID7>
+         
+         </SQLPromptListID7>
+         <SQLPromptListID8>
+         
+         </SQLPromptListID8>
+         <SQLPromptListID9>
+         
+         </SQLPromptListID9>
+         <SQLPromptListID10>
+         
+         </SQLPromptListID10>
+         <DrillDownParameterID1As>
+         
+         </DrillDownParameterID1As>
+         <DrillDownParameterID2As>
+         
+         </DrillDownParameterID2As>
+         <DrillDownParameterCaption1As>
+         
+         </DrillDownParameterCaption1As>
+         <DrillDownParameterCaption2As>
+         
+         </DrillDownParameterCaption2As>
+         <Width>
+         500
+         </Width>
+         <ShowSQLWarning>
+         True
+         </ShowSQLWarning>
+         <DashboardName>
+         
+         </DashboardName>
+         <SmartViewName>
+         
+         </SmartViewName>
+         <ExtraHTML>
+         &lt;h3&gt;Drilldown Examples&lt;/h3&gt;&lt;p&gt;Drilldowns are broken for datatables (DT) that return JSON data. This DT, component 209369, has a defined drilldown to open a SmartView (SV) in a window. Clicking column data directly opens a blank SV (e.g., it&apos;s broken).&lt;/p&gt;
+         </ExtraHTML>
+         <ExtraStyle>
+         width: 100%;
+margin-bottom: 15px;
+box-sizing: border-box;
+padding: 1rem;
+         </ExtraStyle>
+         <Name>
+         
+         </Name>
+      </COMPONENT_2>
+      <COMPONENT_3>
+         <DashboardComponentID>
+         209369
+         </DashboardComponentID>
+         <ColumnNumber>
+         1
+         </ColumnNumber>
+         <Sequence>
+         3
+         </Sequence>
+         <ComponentType>
+         3
+         </ComponentType>
+         <Height>
+         100
+         </Height>
+         <DrillDownType>
+         3
+         </DrillDownType>
+         <DrillDownLinkID>
+         200259
+         </DrillDownLinkID>
+         <DrillDownFile>
+         
+         </DrillDownFile>
+         <DrillDownParameterID1>
+         
+         </DrillDownParameterID1>
+         <DrillDownParameterID2>
+         
+         </DrillDownParameterID2>
+         <DrillDownParameterCaption1>
+         
+         </DrillDownParameterCaption1>
+         <DrillDownParameterCaption2>
+         
+         </DrillDownParameterCaption2>
+         <SQLScript>
+         
+         </SQLScript>
+         <SQLPrompt1>
+         
+         </SQLPrompt1>
+         <SQLPrompt2>
+         
+         </SQLPrompt2>
+         <SQLPrompt3>
+         
+         </SQLPrompt3>
+         <SQLPrompt4>
+         
+         </SQLPrompt4>
+         <SQLPrompt5>
+         
+         </SQLPrompt5>
+         <SQLPrompt6>
+         
+         </SQLPrompt6>
+         <SQLPrompt7>
+         
+         </SQLPrompt7>
+         <SQLPrompt8>
+         
+         </SQLPrompt8>
+         <SQLPrompt9>
+         
+         </SQLPrompt9>
+         <SQLPrompt10>
+         
+         </SQLPrompt10>
+         <SQLPromptListID1>
+         
+         </SQLPromptListID1>
+         <SQLPromptListID2>
+         
+         </SQLPromptListID2>
+         <SQLPromptListID3>
+         
+         </SQLPromptListID3>
+         <SQLPromptListID4>
+         
+         </SQLPromptListID4>
+         <SQLPromptListID5>
+         
+         </SQLPromptListID5>
+         <SQLPromptListID6>
+         
+         </SQLPromptListID6>
+         <SQLPromptListID7>
+         
+         </SQLPromptListID7>
+         <SQLPromptListID8>
+         
+         </SQLPromptListID8>
+         <SQLPromptListID9>
+         
+         </SQLPromptListID9>
+         <SQLPromptListID10>
+         
+         </SQLPromptListID10>
+         <DrillDownParameterID1As>
+         
+         </DrillDownParameterID1As>
+         <DrillDownParameterID2As>
+         
+         </DrillDownParameterID2As>
+         <DrillDownParameterCaption1As>
+         
+         </DrillDownParameterCaption1As>
+         <DrillDownParameterCaption2As>
+         
+         </DrillDownParameterCaption2As>
+         <Width>
+         500
+         </Width>
+         <ShowSQLWarning>
+         True
+         </ShowSQLWarning>
+         <DashboardName>
+         
+         </DashboardName>
+         <SmartViewName>
+         TEST
+         </SmartViewName>
+         <AllowSorting>
+         False
+         </AllowSorting>
+         <AlternativeDatabase>
+         
+         </AlternativeDatabase>
+         <AlternativeServer>
+         
+         </AlternativeServer>
+         <AutoSize>
+         False
+         </AutoSize>
+         <columnAggregateType1>
+         0
+         </columnAggregateType1>
+         <columnAggregateType2>
+         0
+         </columnAggregateType2>
+         <columnAggregateType3>
+         0
+         </columnAggregateType3>
+         <columnAlignment1>
+         0
+         </columnAlignment1>
+         <columnAlignment2>
+         0
+         </columnAlignment2>
+         <columnAlignment3>
+         0
+         </columnAlignment3>
+         <columnDrillDownAs1>
+         %drilldownID1%
+         </columnDrillDownAs1>
+         <columnDrillDownAs2>
+         %drilldownID2%
+         </columnDrillDownAs2>
+         <columnDrillDownAs3>
+         %drilldowncaption%
+         </columnDrillDownAs3>
+         <columnFilter1>
+         False
+         </columnFilter1>
+         <columnFilter2>
+         False
+         </columnFilter2>
+         <columnFilter3>
+         False
+         </columnFilter3>
+         <columnFormatType1>
+         0
+         </columnFormatType1>
+         <columnFormatType2>
+         0
+         </columnFormatType2>
+         <columnFormatType3>
+         0
+         </columnFormatType3>
+         <columnGroupTotals1>
+         0
+         </columnGroupTotals1>
+         <columnGroupTotals2>
+         0
+         </columnGroupTotals2>
+         <columnGroupTotals3>
+         0
+         </columnGroupTotals3>
+         <columnHeaderAlignment1>
+         0
+         </columnHeaderAlignment1>
+         <columnHeaderAlignment2>
+         0
+         </columnHeaderAlignment2>
+         <columnHeaderAlignment3>
+         0
+         </columnHeaderAlignment3>
+         <columnHighlightBackColor1>
+         16777215
+         </columnHighlightBackColor1>
+         <columnHighlightBackColor2>
+         16777215
+         </columnHighlightBackColor2>
+         <columnHighlightBackColor3>
+         16777215
+         </columnHighlightBackColor3>
+         <columnHighlightColor1>
+         16777215
+         </columnHighlightColor1>
+         <columnHighlightColor2>
+         16777215
+         </columnHighlightColor2>
+         <columnHighlightColor3>
+         16777215
+         </columnHighlightColor3>
+         <columnHighlightCondition1>
+         
+         </columnHighlightCondition1>
+         <columnHighlightCondition2>
+         
+         </columnHighlightCondition2>
+         <columnHighlightCondition3>
+         
+         </columnHighlightCondition3>
+         <columnName1>
+         Col1
+         </columnName1>
+         <columnName2>
+         Col2
+         </columnName2>
+         <columnName3>
+         jsonData
+         </columnName3>
+         <columnSortable1>
+         0
+         </columnSortable1>
+         <columnSortable2>
+         0
+         </columnSortable2>
+         <columnSortable3>
+         0
+         </columnSortable3>
+         <columnWidth1>
+         -1
+         </columnWidth1>
+         <columnWidth2>
+         -1
+         </columnWidth2>
+         <columnWidth3>
+         -1
+         </columnWidth3>
+         <DataColumnCount>
+         3
+         </DataColumnCount>
+         <DataSource>
+         0
+         </DataSource>
+         <ExtraStyle>
+         width: 100%;
+margin-bottom: 15px;
+box-sizing: border-box;
+padding: 1rem;
+
+         </ExtraStyle>
+         <FilterFontBold>
+         False
+         </FilterFontBold>
+         <FilterFontColor>
+         0
+         </FilterFontColor>
+         <FilterFontItalic>
+         False
+         </FilterFontItalic>
+         <FilterFontName>
+         Tahoma
+         </FilterFontName>
+         <FilterFontSize>
+         8
+         </FilterFontSize>
+         <FitToWidth>
+         False
+         </FitToWidth>
+         <HideColumnHeaders>
+         False
+         </HideColumnHeaders>
+         <MarginBottom>
+         0
+         </MarginBottom>
+         <MarginLeft>
+         0
+         </MarginLeft>
+         <MarginRight>
+         0
+         </MarginRight>
+         <MarginTop>
+         0
+         </MarginTop>
+         <Name>
+         jsonDT
+         </Name>
+         <PaddingBottom>
+         0
+         </PaddingBottom>
+         <PaddingLeft>
+         0
+         </PaddingLeft>
+         <PaddingRight>
+         0
+         </PaddingRight>
+         <PaddingTop>
+         0
+         </PaddingTop>
+         <RenderAsHTML>
+         True
+         </RenderAsHTML>
+         <ShowGridLines>
+         True
+         </ShowGridLines>
+         <ShowGroupBy>
+         False
+         </ShowGroupBy>
+         <SQL1>
+         SELECT 1 [Col1], 2 [Col2], &apos;{&quot;error&quot;: &quot;Doh!&quot;}&apos; [jsonData]
+         </SQL1>
+         <UseOddEven>
+         False
+         </UseOddEven>
+<SMARTVIEW>
+   <HEADER>
+      <SmartViewID>
+      200259
+      </SmartViewID>
+      <ListTableID>
+      0
+      </ListTableID>
+      <SQLStatement>
+      DECLARE @dd1 INT = %drilldownID1%, @dd2 INT = %drilldownID2%, @dd3 VARCHAR(255) = %drilldowncaption%|13||10||13||10|SELECT |13||10|      @dd1 = ISNULL(@dd1 , -1)|13||10|    , @dd2 = ISNULL(@dd2, -2)|13||10|    , @dd3 = ISNULL(@dd3, &apos;&apos;)|13||10||13||10|SELECT |13||10|  @dd1 AS [DrillDownID1]|13||10|, @dd2 AS [DrilldownID2]|13||10|, @dd3 AS [Drilldowncaption]
+      </SQLStatement>
+      <SQLDocumentListType>
+      
+      </SQLDocumentListType>
+      <SQLObjectListType>
+      
+      </SQLObjectListType>
+      <Name>
+      TEST
+      </Name>
+      <GroupName>
+      SRD
+      </GroupName>
+      <DrillDownTargetOnly>
+      False
+      </DrillDownTargetOnly>
+      <DataSource>
+      1
+      </DataSource>
+      <AlternativeServer>
+      
+      </AlternativeServer>
+      <AlternativeDatabase>
+      
+      </AlternativeDatabase>
+      <ViewProfileID>
+      
+      </ViewProfileID>
+      <DisablePaging>
+      True
+      </DisablePaging>
+      <EnableLoadAll>
+      False
+      </EnableLoadAll>
+      <RefreshOnSelection>
+      True
+      </RefreshOnSelection>
+      <AllowMultipleSelections>
+      False
+      </AllowMultipleSelections>
+      <ShowQuickBrowse>
+      False
+      </ShowQuickBrowse>
+      <QuickBrowseColumnName1>
+      
+      </QuickBrowseColumnName1>
+      <QuickBrowseColumnName2>
+      
+      </QuickBrowseColumnName2>
+      <QuickBrowseColumnName3>
+      
+      </QuickBrowseColumnName3>
+      <ShowAlphaIndex>
+      False
+      </ShowAlphaIndex>
+      <ShowGroupByBox>
+      False
+      </ShowGroupByBox>
+      <UseEvenOddColors>
+      True
+      </UseEvenOddColors>
+      <ShowPreviewRow>
+      False
+      </ShowPreviewRow>
+      <PreviewRowColumnName>
+      
+      </PreviewRowColumnName>
+      <PreviewRowLines>
+      0
+      </PreviewRowLines>
+      <PreviewRowIndent>
+      0
+      </PreviewRowIndent>
+      <HidePreviewColumn>
+      False
+      </HidePreviewColumn>
+      <ColumnHeaderHeight>
+      1
+      </ColumnHeaderHeight>
+      <FrozenColumnCount>
+      0
+      </FrozenColumnCount>
+      <ShadeFrozenColumns>
+      False
+      </ShadeFrozenColumns>
+      <SelectionStyle>
+      0
+      </SelectionStyle>
+      <GridLines>
+      0
+      </GridLines>
+      <GridLineStyle>
+      0
+      </GridLineStyle>
+      <GroupByColumnName1>
+      
+      </GroupByColumnName1>
+      <GroupByColumnName2>
+      
+      </GroupByColumnName2>
+      <GroupByColumnName3>
+      
+      </GroupByColumnName3>
+      <GroupByColumnName4>
+      
+      </GroupByColumnName4>
+      <GroupByAscending1>
+      True
+      </GroupByAscending1>
+      <GroupByAscending2>
+      True
+      </GroupByAscending2>
+      <GroupByAscending3>
+      True
+      </GroupByAscending3>
+      <GroupByAscending4>
+      True
+      </GroupByAscending4>
+      <GroupByExpansion>
+      1
+      </GroupByExpansion>
+      <SortColumnName1>
+      
+      </SortColumnName1>
+      <SortColumnName2>
+      
+      </SortColumnName2>
+      <SortColumnName3>
+      
+      </SortColumnName3>
+      <SortColumnName4>
+      
+      </SortColumnName4>
+      <SortAscending1>
+      True
+      </SortAscending1>
+      <SortAscending2>
+      True
+      </SortAscending2>
+      <SortAscending3>
+      True
+      </SortAscending3>
+      <SortAscending4>
+      True
+      </SortAscending4>
+      <AvailableToAllUsers>
+      False
+      </AvailableToAllUsers>
+      <DateTimeCreated>
+      5/14/2013 8:19:42 AM
+      </DateTimeCreated>
+      <CreatedByID>
+      24
+      </CreatedByID>
+      <DateTimeLastModified>
+      10/28/2025 3:12:44 PM
+      </DateTimeLastModified>
+      <LastModifiedByID>
+      24
+      </LastModifiedByID>
+      <CampaignID>
+      
+      </CampaignID>
+      <DrillDownID>
+      
+      </DrillDownID>
+      <ShowPreviewPane>
+      False
+      </ShowPreviewPane>
+      <SortName>
+      
+      </SortName>
+      <OrderMonitorOptions>
+      0
+      </OrderMonitorOptions>
+      <SmartTileLabel>
+      
+      </SmartTileLabel>
+      <SmartTileSQL>
+      
+      </SmartTileSQL>
+      <SmartTileSize>
+      0
+      </SmartTileSize>
+      <ConditionalFormatType>
+      False
+      </ConditionalFormatType>
+      <QuickBrowseColumnName4>
+      
+      </QuickBrowseColumnName4>
+      <QuickBrowseColumnName5>
+      
+      </QuickBrowseColumnName5>
+      <Notes>
+      Some notes here
+New line
+New line 2
+      </Notes>
+      <SystemTemplate>
+      False
+      </SystemTemplate>
+      <CreatedByName>
+      Steve Dodson
+      </CreatedByName>
+      <LastModifiedByName>
+      Steve Dodson
+      </LastModifiedByName>
+   </HEADER>
+   <COLUMNS>
+      <COLUMN_1>
+         <ListColumnName>
+         200259_DrillDownID1
+         </ListColumnName>
+         <Sequence>
+         1
+         </Sequence>
+         <Caption>
+         DrillDownID1
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_1>
+      <COLUMN_2>
+         <ListColumnName>
+         200259_DrilldownID2
+         </ListColumnName>
+         <Sequence>
+         2
+         </Sequence>
+         <Caption>
+         DrilldownID2
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_2>
+      <COLUMN_3>
+         <ListColumnName>
+         200259_Drilldowncaption
+         </ListColumnName>
+         <Sequence>
+         3
+         </Sequence>
+         <Caption>
+         Drilldowncaption
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_3>
+   </COLUMNS>
+   <CRITERIA>
+   </CRITERIA>
+   <ORDERBY>
+   </ORDERBY>
+   <FORMAT>
+   </FORMAT>
+   <PARAMETERS>
+   </PARAMETERS>
+   <DRILLDOWN>
+   </DRILLDOWN>
+   <PREVIEWPANE>
+   </PREVIEWPANE>
+   <SMARTCLICKS>
+   </SMARTCLICKS>
+   <NOTES>
+      Some notes here|13||10|New line|13||10|New line 2
+   </NOTES>
+</SMARTVIEW>
+      </COMPONENT_3>
+      <COMPONENT_4>
+         <DashboardComponentID>
+         209373
+         </DashboardComponentID>
+         <ColumnNumber>
+         1
+         </ColumnNumber>
+         <Sequence>
+         4
+         </Sequence>
+         <ComponentType>
+         8
+         </ComponentType>
+         <Height>
+         250
+         </Height>
+         <DrillDownType>
+         0
+         </DrillDownType>
+         <DrillDownLinkID>
+         
+         </DrillDownLinkID>
+         <DrillDownFile>
+         
+         </DrillDownFile>
+         <DrillDownParameterID1>
+         
+         </DrillDownParameterID1>
+         <DrillDownParameterID2>
+         
+         </DrillDownParameterID2>
+         <DrillDownParameterCaption1>
+         
+         </DrillDownParameterCaption1>
+         <DrillDownParameterCaption2>
+         
+         </DrillDownParameterCaption2>
+         <SQLScript>
+         
+         </SQLScript>
+         <SQLPrompt1>
+         
+         </SQLPrompt1>
+         <SQLPrompt2>
+         
+         </SQLPrompt2>
+         <SQLPrompt3>
+         
+         </SQLPrompt3>
+         <SQLPrompt4>
+         
+         </SQLPrompt4>
+         <SQLPrompt5>
+         
+         </SQLPrompt5>
+         <SQLPrompt6>
+         
+         </SQLPrompt6>
+         <SQLPrompt7>
+         
+         </SQLPrompt7>
+         <SQLPrompt8>
+         
+         </SQLPrompt8>
+         <SQLPrompt9>
+         
+         </SQLPrompt9>
+         <SQLPrompt10>
+         
+         </SQLPrompt10>
+         <SQLPromptListID1>
+         
+         </SQLPromptListID1>
+         <SQLPromptListID2>
+         
+         </SQLPromptListID2>
+         <SQLPromptListID3>
+         
+         </SQLPromptListID3>
+         <SQLPromptListID4>
+         
+         </SQLPromptListID4>
+         <SQLPromptListID5>
+         
+         </SQLPromptListID5>
+         <SQLPromptListID6>
+         
+         </SQLPromptListID6>
+         <SQLPromptListID7>
+         
+         </SQLPromptListID7>
+         <SQLPromptListID8>
+         
+         </SQLPromptListID8>
+         <SQLPromptListID9>
+         
+         </SQLPromptListID9>
+         <SQLPromptListID10>
+         
+         </SQLPromptListID10>
+         <DrillDownParameterID1As>
+         
+         </DrillDownParameterID1As>
+         <DrillDownParameterID2As>
+         
+         </DrillDownParameterID2As>
+         <DrillDownParameterCaption1As>
+         
+         </DrillDownParameterCaption1As>
+         <DrillDownParameterCaption2As>
+         
+         </DrillDownParameterCaption2As>
+         <Width>
+         500
+         </Width>
+         <ShowSQLWarning>
+         True
+         </ShowSQLWarning>
+         <DashboardName>
+         
+         </DashboardName>
+         <SmartViewName>
+         
+         </SmartViewName>
+         <ExtraHTML>
+         &lt;p&gt;The &quot;Text Line&quot; button opens the drilldown defined in the hidden Text Line component: &lt;a href=&quot;dislinkDrillDown209374&quot; class=&quot;button-primary&quot; tabindex=&quot;-1&quot; role=&quot;button&quot;&gt;Text Line&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The &quot;Custom Values&quot; button opens the drilldown defined in the DataTable component, but sends custom values encoded in the link: &lt;a href=&quot;dislinkDrillDown209369Â&amp;nbsp;%drilldownID1%=2025Â&amp;nbsp;%drilldownID2%=1999Â&amp;nbsp;%drilldowncaption%=&apos;Custom value here&apos;Â&amp;nbsp;&quot; class=&quot;button-primary&quot; tabindex=&quot;-1&quot; role=&quot;button&quot;&gt;Custom Values&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The &quot;JSON value&quot; button sends URLEncoded JSON value to the drilldown defined in the DataTable component: &lt;a href=&quot;dislinkDrillDown209369Â&amp;nbsp;%drilldowncaption%=&apos;%7B%22error%22%3A%20%22Doh%22%7D&apos;Â&amp;nbsp;&quot; class=&quot;button-primary&quot; tabindex=&quot;-1&quot; role=&quot;button&quot;&gt;JSON Value&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Report Example: &lt;a href=&quot;dislinkDrillDown209376Â&amp;nbsp;%drilldownID1%=100Â&amp;nbsp;&quot; class=&quot;button-primary&quot; tabindex=&quot;-1&quot; role=&quot;button&quot;&gt;Report Example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The &quot;Text Line No Params&quot; button opens the drilldown defined in a hidden Text Line component, but sends custom values encoded in the link: &lt;a href=&quot;dislinkDrillDown209377Â&amp;nbsp;%drilldownID1%=47Â&amp;nbsp;%drilldownID2%=45Â&amp;nbsp;%drilldowncaption%=&apos;Text Line with no drilldown params defined&apos;Â&amp;nbsp;&quot; class=&quot;button-primary&quot; tabindex=&quot;-1&quot; role=&quot;button&quot;&gt;Text Line No Params&lt;/a&gt;&lt;/p&gt;
+         </ExtraHTML>
+         <ExtraStyle>
+         width: 100%;
+margin-bottom: 15px;
+box-sizing: border-box;
+padding: 1rem;
+
+         </ExtraStyle>
+         <Name>
+         Links
+         </Name>
+      </COMPONENT_4>
+      <COMPONENT_5>
+         <DashboardComponentID>
+         209371
+         </DashboardComponentID>
+         <ColumnNumber>
+         1
+         </ColumnNumber>
+         <Sequence>
+         5
+         </Sequence>
+         <ComponentType>
+         22
+         </ComponentType>
+         <Height>
+         -1
+         </Height>
+         <DrillDownType>
+         0
+         </DrillDownType>
+         <DrillDownLinkID>
+         
+         </DrillDownLinkID>
+         <DrillDownFile>
+         
+         </DrillDownFile>
+         <DrillDownParameterID1>
+         
+         </DrillDownParameterID1>
+         <DrillDownParameterID2>
+         
+         </DrillDownParameterID2>
+         <DrillDownParameterCaption1>
+         
+         </DrillDownParameterCaption1>
+         <DrillDownParameterCaption2>
+         
+         </DrillDownParameterCaption2>
+         <SQLScript>
+         
+         </SQLScript>
+         <SQLPrompt1>
+         
+         </SQLPrompt1>
+         <SQLPrompt2>
+         
+         </SQLPrompt2>
+         <SQLPrompt3>
+         
+         </SQLPrompt3>
+         <SQLPrompt4>
+         
+         </SQLPrompt4>
+         <SQLPrompt5>
+         
+         </SQLPrompt5>
+         <SQLPrompt6>
+         
+         </SQLPrompt6>
+         <SQLPrompt7>
+         
+         </SQLPrompt7>
+         <SQLPrompt8>
+         
+         </SQLPrompt8>
+         <SQLPrompt9>
+         
+         </SQLPrompt9>
+         <SQLPrompt10>
+         
+         </SQLPrompt10>
+         <SQLPromptListID1>
+         
+         </SQLPromptListID1>
+         <SQLPromptListID2>
+         
+         </SQLPromptListID2>
+         <SQLPromptListID3>
+         
+         </SQLPromptListID3>
+         <SQLPromptListID4>
+         
+         </SQLPromptListID4>
+         <SQLPromptListID5>
+         
+         </SQLPromptListID5>
+         <SQLPromptListID6>
+         
+         </SQLPromptListID6>
+         <SQLPromptListID7>
+         
+         </SQLPromptListID7>
+         <SQLPromptListID8>
+         
+         </SQLPromptListID8>
+         <SQLPromptListID9>
+         
+         </SQLPromptListID9>
+         <SQLPromptListID10>
+         
+         </SQLPromptListID10>
+         <DrillDownParameterID1As>
+         
+         </DrillDownParameterID1As>
+         <DrillDownParameterID2As>
+         
+         </DrillDownParameterID2As>
+         <DrillDownParameterCaption1As>
+         
+         </DrillDownParameterCaption1As>
+         <DrillDownParameterCaption2As>
+         
+         </DrillDownParameterCaption2As>
+         <Width>
+         -1
+         </Width>
+         <ShowSQLWarning>
+         True
+         </ShowSQLWarning>
+         <DashboardName>
+         
+         </DashboardName>
+         <SmartViewName>
+         
+         </SmartViewName>
+         <Name>
+         main-column-90-END
+         </Name>
+      </COMPONENT_5>
+      <COMPONENT_6>
+         <DashboardComponentID>
+         209374
+         </DashboardComponentID>
+         <ColumnNumber>
+         1
+         </ColumnNumber>
+         <Sequence>
+         6
+         </Sequence>
+         <ComponentType>
+         7
+         </ComponentType>
+         <Height>
+         30
+         </Height>
+         <DrillDownType>
+         3
+         </DrillDownType>
+         <DrillDownLinkID>
+         200259
+         </DrillDownLinkID>
+         <DrillDownFile>
+         
+         </DrillDownFile>
+         <DrillDownParameterID1>
+         100
+         </DrillDownParameterID1>
+         <DrillDownParameterID2>
+         200
+         </DrillDownParameterID2>
+         <DrillDownParameterCaption1>
+         &apos;Thanks for clicking!&apos;
+         </DrillDownParameterCaption1>
+         <DrillDownParameterCaption2>
+         
+         </DrillDownParameterCaption2>
+         <SQLScript>
+         
+         </SQLScript>
+         <SQLPrompt1>
+         
+         </SQLPrompt1>
+         <SQLPrompt2>
+         
+         </SQLPrompt2>
+         <SQLPrompt3>
+         
+         </SQLPrompt3>
+         <SQLPrompt4>
+         
+         </SQLPrompt4>
+         <SQLPrompt5>
+         
+         </SQLPrompt5>
+         <SQLPrompt6>
+         
+         </SQLPrompt6>
+         <SQLPrompt7>
+         
+         </SQLPrompt7>
+         <SQLPrompt8>
+         
+         </SQLPrompt8>
+         <SQLPrompt9>
+         
+         </SQLPrompt9>
+         <SQLPrompt10>
+         
+         </SQLPrompt10>
+         <SQLPromptListID1>
+         
+         </SQLPromptListID1>
+         <SQLPromptListID2>
+         
+         </SQLPromptListID2>
+         <SQLPromptListID3>
+         
+         </SQLPromptListID3>
+         <SQLPromptListID4>
+         
+         </SQLPromptListID4>
+         <SQLPromptListID5>
+         
+         </SQLPromptListID5>
+         <SQLPromptListID6>
+         
+         </SQLPromptListID6>
+         <SQLPromptListID7>
+         
+         </SQLPromptListID7>
+         <SQLPromptListID8>
+         
+         </SQLPromptListID8>
+         <SQLPromptListID9>
+         
+         </SQLPromptListID9>
+         <SQLPromptListID10>
+         
+         </SQLPromptListID10>
+         <DrillDownParameterID1As>
+         %drilldownid1%
+         </DrillDownParameterID1As>
+         <DrillDownParameterID2As>
+         %drilldownid2%
+         </DrillDownParameterID2As>
+         <DrillDownParameterCaption1As>
+         %drilldowncaption%
+         </DrillDownParameterCaption1As>
+         <DrillDownParameterCaption2As>
+         %drilldowncaption2%
+         </DrillDownParameterCaption2As>
+         <Width>
+         200
+         </Width>
+         <ShowSQLWarning>
+         True
+         </ShowSQLWarning>
+         <DashboardName>
+         
+         </DashboardName>
+         <SmartViewName>
+         TEST
+         </SmartViewName>
+         <BackColor>
+         16777215
+         </BackColor>
+         <BorderColor>
+         16777215
+         </BorderColor>
+         <Caption>
+         Hidden: Opens TEST SV in new window with hardcoded drilldown
+         </Caption>
+         <CaptionAlignment>
+         0
+         </CaptionAlignment>
+         <ExtraStyle>
+         display:none; visibility:hidden;
+         </ExtraStyle>
+         <FontBold1>
+         False
+         </FontBold1>
+         <FontColor1>
+         0
+         </FontColor1>
+         <FontItalic1>
+         False
+         </FontItalic1>
+         <FontName1>
+         Tahoma
+         </FontName1>
+         <FontSize1>
+         8
+         </FontSize1>
+         <MarginBottom>
+         0
+         </MarginBottom>
+         <MarginLeft>
+         0
+         </MarginLeft>
+         <MarginRight>
+         0
+         </MarginRight>
+         <MarginTop>
+         0
+         </MarginTop>
+         <Name>
+         OpenTestSV
+         </Name>
+         <PaddingBottom>
+         0
+         </PaddingBottom>
+         <PaddingLeft>
+         0
+         </PaddingLeft>
+         <PaddingRight>
+         0
+         </PaddingRight>
+         <PaddingTop>
+         0
+         </PaddingTop>
+         <ShowBorder>
+         False
+         </ShowBorder>
+         <VerticalAlignment>
+         2
+         </VerticalAlignment>
+<SMARTVIEW>
+   <HEADER>
+      <SmartViewID>
+      200259
+      </SmartViewID>
+      <ListTableID>
+      0
+      </ListTableID>
+      <SQLStatement>
+      DECLARE @dd1 INT = %drilldownID1%, @dd2 INT = %drilldownID2%, @dd3 VARCHAR(255) = %drilldowncaption%|13||10||13||10|SELECT |13||10|      @dd1 = ISNULL(@dd1 , -1)|13||10|    , @dd2 = ISNULL(@dd2, -2)|13||10|    , @dd3 = ISNULL(@dd3, &apos;&apos;)|13||10||13||10|SELECT |13||10|  @dd1 AS [DrillDownID1]|13||10|, @dd2 AS [DrilldownID2]|13||10|, @dd3 AS [Drilldowncaption]
+      </SQLStatement>
+      <SQLDocumentListType>
+      
+      </SQLDocumentListType>
+      <SQLObjectListType>
+      
+      </SQLObjectListType>
+      <Name>
+      TEST
+      </Name>
+      <GroupName>
+      SRD
+      </GroupName>
+      <DrillDownTargetOnly>
+      False
+      </DrillDownTargetOnly>
+      <DataSource>
+      1
+      </DataSource>
+      <AlternativeServer>
+      
+      </AlternativeServer>
+      <AlternativeDatabase>
+      
+      </AlternativeDatabase>
+      <ViewProfileID>
+      
+      </ViewProfileID>
+      <DisablePaging>
+      True
+      </DisablePaging>
+      <EnableLoadAll>
+      False
+      </EnableLoadAll>
+      <RefreshOnSelection>
+      True
+      </RefreshOnSelection>
+      <AllowMultipleSelections>
+      False
+      </AllowMultipleSelections>
+      <ShowQuickBrowse>
+      False
+      </ShowQuickBrowse>
+      <QuickBrowseColumnName1>
+      
+      </QuickBrowseColumnName1>
+      <QuickBrowseColumnName2>
+      
+      </QuickBrowseColumnName2>
+      <QuickBrowseColumnName3>
+      
+      </QuickBrowseColumnName3>
+      <ShowAlphaIndex>
+      False
+      </ShowAlphaIndex>
+      <ShowGroupByBox>
+      False
+      </ShowGroupByBox>
+      <UseEvenOddColors>
+      True
+      </UseEvenOddColors>
+      <ShowPreviewRow>
+      False
+      </ShowPreviewRow>
+      <PreviewRowColumnName>
+      
+      </PreviewRowColumnName>
+      <PreviewRowLines>
+      0
+      </PreviewRowLines>
+      <PreviewRowIndent>
+      0
+      </PreviewRowIndent>
+      <HidePreviewColumn>
+      False
+      </HidePreviewColumn>
+      <ColumnHeaderHeight>
+      1
+      </ColumnHeaderHeight>
+      <FrozenColumnCount>
+      0
+      </FrozenColumnCount>
+      <ShadeFrozenColumns>
+      False
+      </ShadeFrozenColumns>
+      <SelectionStyle>
+      0
+      </SelectionStyle>
+      <GridLines>
+      0
+      </GridLines>
+      <GridLineStyle>
+      0
+      </GridLineStyle>
+      <GroupByColumnName1>
+      
+      </GroupByColumnName1>
+      <GroupByColumnName2>
+      
+      </GroupByColumnName2>
+      <GroupByColumnName3>
+      
+      </GroupByColumnName3>
+      <GroupByColumnName4>
+      
+      </GroupByColumnName4>
+      <GroupByAscending1>
+      True
+      </GroupByAscending1>
+      <GroupByAscending2>
+      True
+      </GroupByAscending2>
+      <GroupByAscending3>
+      True
+      </GroupByAscending3>
+      <GroupByAscending4>
+      True
+      </GroupByAscending4>
+      <GroupByExpansion>
+      1
+      </GroupByExpansion>
+      <SortColumnName1>
+      
+      </SortColumnName1>
+      <SortColumnName2>
+      
+      </SortColumnName2>
+      <SortColumnName3>
+      
+      </SortColumnName3>
+      <SortColumnName4>
+      
+      </SortColumnName4>
+      <SortAscending1>
+      True
+      </SortAscending1>
+      <SortAscending2>
+      True
+      </SortAscending2>
+      <SortAscending3>
+      True
+      </SortAscending3>
+      <SortAscending4>
+      True
+      </SortAscending4>
+      <AvailableToAllUsers>
+      False
+      </AvailableToAllUsers>
+      <DateTimeCreated>
+      5/14/2013 8:19:42 AM
+      </DateTimeCreated>
+      <CreatedByID>
+      24
+      </CreatedByID>
+      <DateTimeLastModified>
+      10/28/2025 3:12:44 PM
+      </DateTimeLastModified>
+      <LastModifiedByID>
+      24
+      </LastModifiedByID>
+      <CampaignID>
+      
+      </CampaignID>
+      <DrillDownID>
+      
+      </DrillDownID>
+      <ShowPreviewPane>
+      False
+      </ShowPreviewPane>
+      <SortName>
+      
+      </SortName>
+      <OrderMonitorOptions>
+      0
+      </OrderMonitorOptions>
+      <SmartTileLabel>
+      
+      </SmartTileLabel>
+      <SmartTileSQL>
+      
+      </SmartTileSQL>
+      <SmartTileSize>
+      0
+      </SmartTileSize>
+      <ConditionalFormatType>
+      False
+      </ConditionalFormatType>
+      <QuickBrowseColumnName4>
+      
+      </QuickBrowseColumnName4>
+      <QuickBrowseColumnName5>
+      
+      </QuickBrowseColumnName5>
+      <Notes>
+      Some notes here
+New line
+New line 2
+      </Notes>
+      <SystemTemplate>
+      False
+      </SystemTemplate>
+      <CreatedByName>
+      Steve Dodson
+      </CreatedByName>
+      <LastModifiedByName>
+      Steve Dodson
+      </LastModifiedByName>
+   </HEADER>
+   <COLUMNS>
+      <COLUMN_1>
+         <ListColumnName>
+         200259_DrillDownID1
+         </ListColumnName>
+         <Sequence>
+         1
+         </Sequence>
+         <Caption>
+         DrillDownID1
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_1>
+      <COLUMN_2>
+         <ListColumnName>
+         200259_DrilldownID2
+         </ListColumnName>
+         <Sequence>
+         2
+         </Sequence>
+         <Caption>
+         DrilldownID2
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_2>
+      <COLUMN_3>
+         <ListColumnName>
+         200259_Drilldowncaption
+         </ListColumnName>
+         <Sequence>
+         3
+         </Sequence>
+         <Caption>
+         Drilldowncaption
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_3>
+   </COLUMNS>
+   <CRITERIA>
+   </CRITERIA>
+   <ORDERBY>
+   </ORDERBY>
+   <FORMAT>
+   </FORMAT>
+   <PARAMETERS>
+   </PARAMETERS>
+   <DRILLDOWN>
+   </DRILLDOWN>
+   <PREVIEWPANE>
+   </PREVIEWPANE>
+   <SMARTCLICKS>
+   </SMARTCLICKS>
+   <NOTES>
+      Some notes here|13||10|New line|13||10|New line 2
+   </NOTES>
+</SMARTVIEW>
+      </COMPONENT_6>
+      <COMPONENT_7>
+         <DashboardComponentID>
+         209376
+         </DashboardComponentID>
+         <ColumnNumber>
+         1
+         </ColumnNumber>
+         <Sequence>
+         7
+         </Sequence>
+         <ComponentType>
+         7
+         </ComponentType>
+         <Height>
+         30
+         </Height>
+         <DrillDownType>
+         0
+         </DrillDownType>
+         <DrillDownLinkID>
+         0
+         </DrillDownLinkID>
+         <DrillDownFile>
+         
+         </DrillDownFile>
+         <DrillDownParameterID1>
+         
+         </DrillDownParameterID1>
+         <DrillDownParameterID2>
+         
+         </DrillDownParameterID2>
+         <DrillDownParameterCaption1>
+         
+         </DrillDownParameterCaption1>
+         <DrillDownParameterCaption2>
+         
+         </DrillDownParameterCaption2>
+         <SQLScript>
+         
+         </SQLScript>
+         <SQLPrompt1>
+         
+         </SQLPrompt1>
+         <SQLPrompt2>
+         
+         </SQLPrompt2>
+         <SQLPrompt3>
+         
+         </SQLPrompt3>
+         <SQLPrompt4>
+         
+         </SQLPrompt4>
+         <SQLPrompt5>
+         
+         </SQLPrompt5>
+         <SQLPrompt6>
+         
+         </SQLPrompt6>
+         <SQLPrompt7>
+         
+         </SQLPrompt7>
+         <SQLPrompt8>
+         
+         </SQLPrompt8>
+         <SQLPrompt9>
+         
+         </SQLPrompt9>
+         <SQLPrompt10>
+         
+         </SQLPrompt10>
+         <SQLPromptListID1>
+         
+         </SQLPromptListID1>
+         <SQLPromptListID2>
+         
+         </SQLPromptListID2>
+         <SQLPromptListID3>
+         
+         </SQLPromptListID3>
+         <SQLPromptListID4>
+         
+         </SQLPromptListID4>
+         <SQLPromptListID5>
+         
+         </SQLPromptListID5>
+         <SQLPromptListID6>
+         
+         </SQLPromptListID6>
+         <SQLPromptListID7>
+         
+         </SQLPromptListID7>
+         <SQLPromptListID8>
+         
+         </SQLPromptListID8>
+         <SQLPromptListID9>
+         
+         </SQLPromptListID9>
+         <SQLPromptListID10>
+         
+         </SQLPromptListID10>
+         <DrillDownParameterID1As>
+         
+         </DrillDownParameterID1As>
+         <DrillDownParameterID2As>
+         
+         </DrillDownParameterID2As>
+         <DrillDownParameterCaption1As>
+         
+         </DrillDownParameterCaption1As>
+         <DrillDownParameterCaption2As>
+         
+         </DrillDownParameterCaption2As>
+         <Width>
+         200
+         </Width>
+         <ShowSQLWarning>
+         True
+         </ShowSQLWarning>
+         <DashboardName>
+         
+         </DashboardName>
+         <SmartViewName>
+         
+         </SmartViewName>
+         <BackColor>
+         16777215
+         </BackColor>
+         <BorderColor>
+         16777215
+         </BorderColor>
+         <Caption>
+         ReportExample
+         </Caption>
+         <CaptionAlignment>
+         0
+         </CaptionAlignment>
+         <ExtraStyle>
+         display:none; visibility:hidden;
+         </ExtraStyle>
+         <FontBold1>
+         False
+         </FontBold1>
+         <FontColor1>
+         0
+         </FontColor1>
+         <FontItalic1>
+         False
+         </FontItalic1>
+         <FontName1>
+         Tahoma
+         </FontName1>
+         <FontSize1>
+         8
+         </FontSize1>
+         <MarginBottom>
+         0
+         </MarginBottom>
+         <MarginLeft>
+         0
+         </MarginLeft>
+         <MarginRight>
+         0
+         </MarginRight>
+         <MarginTop>
+         0
+         </MarginTop>
+         <Name>
+         ReportExample
+         </Name>
+         <PaddingBottom>
+         0
+         </PaddingBottom>
+         <PaddingLeft>
+         0
+         </PaddingLeft>
+         <PaddingRight>
+         0
+         </PaddingRight>
+         <PaddingTop>
+         0
+         </PaddingTop>
+         <ShowBorder>
+         False
+         </ShowBorder>
+         <VerticalAlignment>
+         2
+         </VerticalAlignment>
+      </COMPONENT_7>
+      <COMPONENT_8>
+         <DashboardComponentID>
+         209377
+         </DashboardComponentID>
+         <ColumnNumber>
+         1
+         </ColumnNumber>
+         <Sequence>
+         8
+         </Sequence>
+         <ComponentType>
+         7
+         </ComponentType>
+         <Height>
+         30
+         </Height>
+         <DrillDownType>
+         3
+         </DrillDownType>
+         <DrillDownLinkID>
+         200259
+         </DrillDownLinkID>
+         <DrillDownFile>
+         
+         </DrillDownFile>
+         <DrillDownParameterID1>
+         
+         </DrillDownParameterID1>
+         <DrillDownParameterID2>
+         
+         </DrillDownParameterID2>
+         <DrillDownParameterCaption1>
+         
+         </DrillDownParameterCaption1>
+         <DrillDownParameterCaption2>
+         
+         </DrillDownParameterCaption2>
+         <SQLScript>
+         
+         </SQLScript>
+         <SQLPrompt1>
+         
+         </SQLPrompt1>
+         <SQLPrompt2>
+         
+         </SQLPrompt2>
+         <SQLPrompt3>
+         
+         </SQLPrompt3>
+         <SQLPrompt4>
+         
+         </SQLPrompt4>
+         <SQLPrompt5>
+         
+         </SQLPrompt5>
+         <SQLPrompt6>
+         
+         </SQLPrompt6>
+         <SQLPrompt7>
+         
+         </SQLPrompt7>
+         <SQLPrompt8>
+         
+         </SQLPrompt8>
+         <SQLPrompt9>
+         
+         </SQLPrompt9>
+         <SQLPrompt10>
+         
+         </SQLPrompt10>
+         <SQLPromptListID1>
+         
+         </SQLPromptListID1>
+         <SQLPromptListID2>
+         
+         </SQLPromptListID2>
+         <SQLPromptListID3>
+         
+         </SQLPromptListID3>
+         <SQLPromptListID4>
+         
+         </SQLPromptListID4>
+         <SQLPromptListID5>
+         
+         </SQLPromptListID5>
+         <SQLPromptListID6>
+         
+         </SQLPromptListID6>
+         <SQLPromptListID7>
+         
+         </SQLPromptListID7>
+         <SQLPromptListID8>
+         
+         </SQLPromptListID8>
+         <SQLPromptListID9>
+         
+         </SQLPromptListID9>
+         <SQLPromptListID10>
+         
+         </SQLPromptListID10>
+         <DrillDownParameterID1As>
+         
+         </DrillDownParameterID1As>
+         <DrillDownParameterID2As>
+         
+         </DrillDownParameterID2As>
+         <DrillDownParameterCaption1As>
+         
+         </DrillDownParameterCaption1As>
+         <DrillDownParameterCaption2As>
+         
+         </DrillDownParameterCaption2As>
+         <Width>
+         200
+         </Width>
+         <ShowSQLWarning>
+         True
+         </ShowSQLWarning>
+         <DashboardName>
+         
+         </DashboardName>
+         <SmartViewName>
+         TEST
+         </SmartViewName>
+         <BackColor>
+         16777215
+         </BackColor>
+         <BorderColor>
+         16777215
+         </BorderColor>
+         <Caption>
+         OpenTestSVNoParams
+         </Caption>
+         <CaptionAlignment>
+         0
+         </CaptionAlignment>
+         <ExtraStyle>
+         display:none; visibility:hidden;
+         </ExtraStyle>
+         <FontBold1>
+         False
+         </FontBold1>
+         <FontColor1>
+         0
+         </FontColor1>
+         <FontItalic1>
+         False
+         </FontItalic1>
+         <FontName1>
+         Tahoma
+         </FontName1>
+         <FontSize1>
+         8
+         </FontSize1>
+         <MarginBottom>
+         0
+         </MarginBottom>
+         <MarginLeft>
+         0
+         </MarginLeft>
+         <MarginRight>
+         0
+         </MarginRight>
+         <MarginTop>
+         0
+         </MarginTop>
+         <Name>
+         OpenTestSVNoParams
+         </Name>
+         <PaddingBottom>
+         0
+         </PaddingBottom>
+         <PaddingLeft>
+         0
+         </PaddingLeft>
+         <PaddingRight>
+         0
+         </PaddingRight>
+         <PaddingTop>
+         0
+         </PaddingTop>
+         <ShowBorder>
+         False
+         </ShowBorder>
+         <VerticalAlignment>
+         2
+         </VerticalAlignment>
+<SMARTVIEW>
+   <HEADER>
+      <SmartViewID>
+      200259
+      </SmartViewID>
+      <ListTableID>
+      0
+      </ListTableID>
+      <SQLStatement>
+      DECLARE @dd1 INT = %drilldownID1%, @dd2 INT = %drilldownID2%, @dd3 VARCHAR(255) = %drilldowncaption%|13||10||13||10|SELECT |13||10|      @dd1 = ISNULL(@dd1 , -1)|13||10|    , @dd2 = ISNULL(@dd2, -2)|13||10|    , @dd3 = ISNULL(@dd3, &apos;&apos;)|13||10||13||10|SELECT |13||10|  @dd1 AS [DrillDownID1]|13||10|, @dd2 AS [DrilldownID2]|13||10|, @dd3 AS [Drilldowncaption]
+      </SQLStatement>
+      <SQLDocumentListType>
+      
+      </SQLDocumentListType>
+      <SQLObjectListType>
+      
+      </SQLObjectListType>
+      <Name>
+      TEST
+      </Name>
+      <GroupName>
+      SRD
+      </GroupName>
+      <DrillDownTargetOnly>
+      False
+      </DrillDownTargetOnly>
+      <DataSource>
+      1
+      </DataSource>
+      <AlternativeServer>
+      
+      </AlternativeServer>
+      <AlternativeDatabase>
+      
+      </AlternativeDatabase>
+      <ViewProfileID>
+      
+      </ViewProfileID>
+      <DisablePaging>
+      True
+      </DisablePaging>
+      <EnableLoadAll>
+      False
+      </EnableLoadAll>
+      <RefreshOnSelection>
+      True
+      </RefreshOnSelection>
+      <AllowMultipleSelections>
+      False
+      </AllowMultipleSelections>
+      <ShowQuickBrowse>
+      False
+      </ShowQuickBrowse>
+      <QuickBrowseColumnName1>
+      
+      </QuickBrowseColumnName1>
+      <QuickBrowseColumnName2>
+      
+      </QuickBrowseColumnName2>
+      <QuickBrowseColumnName3>
+      
+      </QuickBrowseColumnName3>
+      <ShowAlphaIndex>
+      False
+      </ShowAlphaIndex>
+      <ShowGroupByBox>
+      False
+      </ShowGroupByBox>
+      <UseEvenOddColors>
+      True
+      </UseEvenOddColors>
+      <ShowPreviewRow>
+      False
+      </ShowPreviewRow>
+      <PreviewRowColumnName>
+      
+      </PreviewRowColumnName>
+      <PreviewRowLines>
+      0
+      </PreviewRowLines>
+      <PreviewRowIndent>
+      0
+      </PreviewRowIndent>
+      <HidePreviewColumn>
+      False
+      </HidePreviewColumn>
+      <ColumnHeaderHeight>
+      1
+      </ColumnHeaderHeight>
+      <FrozenColumnCount>
+      0
+      </FrozenColumnCount>
+      <ShadeFrozenColumns>
+      False
+      </ShadeFrozenColumns>
+      <SelectionStyle>
+      0
+      </SelectionStyle>
+      <GridLines>
+      0
+      </GridLines>
+      <GridLineStyle>
+      0
+      </GridLineStyle>
+      <GroupByColumnName1>
+      
+      </GroupByColumnName1>
+      <GroupByColumnName2>
+      
+      </GroupByColumnName2>
+      <GroupByColumnName3>
+      
+      </GroupByColumnName3>
+      <GroupByColumnName4>
+      
+      </GroupByColumnName4>
+      <GroupByAscending1>
+      True
+      </GroupByAscending1>
+      <GroupByAscending2>
+      True
+      </GroupByAscending2>
+      <GroupByAscending3>
+      True
+      </GroupByAscending3>
+      <GroupByAscending4>
+      True
+      </GroupByAscending4>
+      <GroupByExpansion>
+      1
+      </GroupByExpansion>
+      <SortColumnName1>
+      
+      </SortColumnName1>
+      <SortColumnName2>
+      
+      </SortColumnName2>
+      <SortColumnName3>
+      
+      </SortColumnName3>
+      <SortColumnName4>
+      
+      </SortColumnName4>
+      <SortAscending1>
+      True
+      </SortAscending1>
+      <SortAscending2>
+      True
+      </SortAscending2>
+      <SortAscending3>
+      True
+      </SortAscending3>
+      <SortAscending4>
+      True
+      </SortAscending4>
+      <AvailableToAllUsers>
+      False
+      </AvailableToAllUsers>
+      <DateTimeCreated>
+      5/14/2013 8:19:42 AM
+      </DateTimeCreated>
+      <CreatedByID>
+      24
+      </CreatedByID>
+      <DateTimeLastModified>
+      10/28/2025 3:12:44 PM
+      </DateTimeLastModified>
+      <LastModifiedByID>
+      24
+      </LastModifiedByID>
+      <CampaignID>
+      
+      </CampaignID>
+      <DrillDownID>
+      
+      </DrillDownID>
+      <ShowPreviewPane>
+      False
+      </ShowPreviewPane>
+      <SortName>
+      
+      </SortName>
+      <OrderMonitorOptions>
+      0
+      </OrderMonitorOptions>
+      <SmartTileLabel>
+      
+      </SmartTileLabel>
+      <SmartTileSQL>
+      
+      </SmartTileSQL>
+      <SmartTileSize>
+      0
+      </SmartTileSize>
+      <ConditionalFormatType>
+      False
+      </ConditionalFormatType>
+      <QuickBrowseColumnName4>
+      
+      </QuickBrowseColumnName4>
+      <QuickBrowseColumnName5>
+      
+      </QuickBrowseColumnName5>
+      <Notes>
+      Some notes here
+New line
+New line 2
+      </Notes>
+      <SystemTemplate>
+      False
+      </SystemTemplate>
+      <CreatedByName>
+      Steve Dodson
+      </CreatedByName>
+      <LastModifiedByName>
+      Steve Dodson
+      </LastModifiedByName>
+   </HEADER>
+   <COLUMNS>
+      <COLUMN_1>
+         <ListColumnName>
+         200259_DrillDownID1
+         </ListColumnName>
+         <Sequence>
+         1
+         </Sequence>
+         <Caption>
+         DrillDownID1
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_1>
+      <COLUMN_2>
+         <ListColumnName>
+         200259_DrilldownID2
+         </ListColumnName>
+         <Sequence>
+         2
+         </Sequence>
+         <Caption>
+         DrilldownID2
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_2>
+      <COLUMN_3>
+         <ListColumnName>
+         200259_Drilldowncaption
+         </ListColumnName>
+         <Sequence>
+         3
+         </Sequence>
+         <Caption>
+         Drilldowncaption
+         </Caption>
+         <Width>
+         100
+         </Width>
+         <TextAlignment>
+         0
+         </TextAlignment>
+         <HeaderAlignment>
+         0
+         </HeaderAlignment>
+         <Format>
+         
+         </Format>
+         <GroupTotalType>
+         0
+         </GroupTotalType>
+         <ShowTotalsInGroupHeader>
+         False
+         </ShowTotalsInGroupHeader>
+         <TotalRowFormat>
+         
+         </TotalRowFormat>
+         <TotalRowPrefix>
+         
+         </TotalRowPrefix>
+         <EnableTextSearching>
+         False
+         </EnableTextSearching>
+         <SQLDocumentListType>
+         0
+         </SQLDocumentListType>
+         <SQLObjectListType>
+         0
+         </SQLObjectListType>
+         <DrillDownAs>
+         
+         </DrillDownAs>
+         <SpecialFieldType>
+         
+         </SpecialFieldType>
+         <EnableEditing>
+         False
+         </EnableEditing>
+         <DefaultNewValue>
+         
+         </DefaultNewValue>
+         <DisplayAs>
+         0
+         </DisplayAs>
+      </COLUMN_3>
+   </COLUMNS>
+   <CRITERIA>
+   </CRITERIA>
+   <ORDERBY>
+   </ORDERBY>
+   <FORMAT>
+   </FORMAT>
+   <PARAMETERS>
+   </PARAMETERS>
+   <DRILLDOWN>
+   </DRILLDOWN>
+   <PREVIEWPANE>
+   </PREVIEWPANE>
+   <SMARTCLICKS>
+   </SMARTCLICKS>
+   <NOTES>
+      Some notes here|13||10|New line|13||10|New line 2
+   </NOTES>
+</SMARTVIEW>
+      </COMPONENT_8>
+   </COMPONENTS>
+   <PARAMETERS>
+   </PARAMETERS>
+   <NOTES>
+   </NOTES>
+</DASHBOARD>
