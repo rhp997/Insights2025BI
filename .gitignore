@@ -5,4 +5,3 @@ package-lock.json
 public/ticker-example.html
 public/*test*.html
 *test*
-public/sql/for-json-example.sql
