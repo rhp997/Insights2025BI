@@ -40,9 +40,3 @@ Once started, navigate to [localhost on port 3005:](http://localhost:3005) in a 
 The goal of this presentation is to provide Bistrack BI developers with a set of tools to help solve real problems with actionable data. Much of the focus will be on web-based technologies such as HTML, CSS, and JSON. As Bistrack continues to mature as a web platform, this tech stack is all the more relevant.
 
 As each business is unique and one-size-fits-all applications rarely work for everyone, we hope to provide tools instead of full-blown applications. Thus, the provided examples will be minimialist to outline a concept. Some assembly required.
-
-TODO: Will the SVG load work in BisTrack? See SVG Test Fetch (export this dashboard?); fetch an SVG file from the icon website?
-TODO: Add a note about Settings Sync to VS Code environment
-TODO: Add a note about GitHub integration?
-TODO: Export dashboards?
-TODO: Add verbiage about having a container or similar on the network that runs a web server that you can access for ETL
