@@ -1,1 +1,0 @@
-The db-drilldowns.xml dashboard includes a link to a Crystal Report that does not export. For the Report Example button to work, the hidden text line component, ReportExample, must be edited to include a Drilldown to a Crystal Report on your system.
