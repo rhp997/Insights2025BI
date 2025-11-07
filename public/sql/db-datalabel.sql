@@ -10,6 +10,7 @@ INSERT @links
 VALUES
     ('This example opens the (hardcoded) drilldown defined in the hidden OpenTestSV Text Line component', 'Static Drilldown', 'dislinkDrillDown209374'),
     ('The "Text Line Custom" button opens the drilldown defined in a hidden Text Line component, but sends custom values encoded in the link: ', 'Text Line Custom', 'dislinkDrillDown209369%C3%82%C2%A0%drilldownID1%=2025%C3%82%C2%A0%drilldownID2%=1999%C3%82%C2%A0%drilldowncaption%=''Custom%20value%20here''%C3%82%C2%A0'),
+    ('The "Custom Param" button opens the drilldown defined in a hidden Text Line component, but sends a drilldown parameter that is not defined (or even available) in the Text Line component', 'Custom Param', 'dislinkDrillDown209369%C3%82%C2%A0%drilldownString=''bob''%C3%82%C2%A0'),
     ('The "Custom Link" button opens the drilldown defined in the DataTable component, but sends custom values encoded in the link', 'Custom Link', 'dislinkDrillDown209369%C3%82%C2%A0%drilldownID1%=2025%C3%82%C2%A0%drilldownID2%=1999%C3%82%C2%A0%drilldowncaption%=''Custom%20value%20here''%C3%82%C2%A0'),
     ('This example opens a Crystal report as defined in the ReportExample Text Line component. Note: The report does not import/export as a linked item (e.g., won''t work out of the box) and must be manually assigned to the Text Line component as a drilldown', 'Report Example', 'dislinkDrillDown209376'),
     ('The "JSON value" button sends URLEncoded JSON value to the drilldown defined in the DataTable component', 'JSON Value', 'dislinkDrillDown209369%C3%82%C2%A0%drilldowncaption%=''%7B%22error%22%3A%20%22Doh%22%7D''%C3%82%C2%A0'),
@@ -20,7 +21,7 @@ VALUES
   Create an HTML table with Bootstrap classes and links from the @links table. Requires a separate CSS override to style the table properly.
 */
 SELECT 'table table-bordered table-striped table-hover caption-end' AS "@class",
-    (SELECT 'Drilldown Examples'
+    (SELECT 'This table was created using SQL inside a Data Label component'
     FOR XML PATH('caption'), TYPE), -- caption
     (SELECT
         (SELECT
