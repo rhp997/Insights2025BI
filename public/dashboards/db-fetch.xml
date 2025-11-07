@@ -4,7 +4,7 @@
       100636
       </DashboardID>
       <Name>
-      BTUC25:SVG Fetch Test
+      BTUC25:Fetch Test
       </Name>
       <GroupName>
       BTUC25
@@ -82,7 +82,7 @@
       False
       </SystemTemplate>
       <SortName>
-      
+      8
       </SortName>
       <SmartTileLabel>
       
