@@ -121,7 +121,15 @@
       False
       </DisableParameterRefresh>
       <Notes>
-      
+      This dashboard was created as an example of how to extend drilldowns in dynamic dashboards. Three examples of using local and session storage are also included.
+
+Note that several component styles are unset in the Header/Footer section.
+
+Components:
+1.) The jsonDT datatable returns JSON data in the third column, which breaks the drilldown
+2.) The Links-DL data label component creates a table of clickable examples using FOR XML. The row and buttons are both clickable.
+3.) The ResultsDiv Vertical Space component is a placeholder for the Session and Local storage counters
+4.) Various hidden TextLine and DataTable components are used as drilldown placeholders.
       </Notes>
       <CreatedByName>
       Steve Dodson
@@ -756,7 +764,7 @@ padding: 1rem;
       24
       </CreatedByID>
       <DateTimeLastModified>
-      11/6/2025 4:51:47 PM
+      11/6/2025 5:28:08 PM
       </DateTimeLastModified>
       <LastModifiedByID>
       24
@@ -1910,7 +1918,7 @@ New line 2
       24
       </CreatedByID>
       <DateTimeLastModified>
-      11/6/2025 4:51:48 PM
+      11/6/2025 5:28:08 PM
       </DateTimeLastModified>
       <LastModifiedByID>
       24
@@ -2760,7 +2768,7 @@ New line 2
       24
       </CreatedByID>
       <DateTimeLastModified>
-      11/6/2025 4:51:48 PM
+      11/6/2025 5:28:08 PM
       </DateTimeLastModified>
       <LastModifiedByID>
       24
@@ -4050,5 +4058,6 @@ New line 2
    <PARAMETERS>
    </PARAMETERS>
    <NOTES>
+      This dashboard was created as an example of how to extend drilldowns in dynamic dashboards. Three examples of using local and session storage are also included.|13||10||13||10|Note that several component styles are unset in the Header/Footer section.|13||10||13||10|Components:|13||10|1.) The jsonDT datatable returns JSON data in the third column, which breaks the drilldown|13||10|2.) The Links-DL data label component creates a table of clickable examples using FOR XML. The row and buttons are both clickable.|13||10|3.) The ResultsDiv Vertical Space component is a placeholder for the Session and Local storage counters|13||10|4.) Various hidden TextLine and DataTable components are used as drilldown placeholders.
    </NOTES>
 </DASHBOARD>
